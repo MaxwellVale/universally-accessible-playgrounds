@@ -1,12 +1,64 @@
-# React + Vite
+# Universally Accessible Playgrounds
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a React web app that helps users find universally accessible playgrounds and parks in Los Angeles.  
+It uses **React**, **Vite**, **React Router**, and **React-Leaflet** for the interactive map.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Getting Started
 
-## Expanding the ESLint configuration
+### Clone the repository
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```bash
+git clone https://github.com/MaxwellVale/universally-accessible-playgrounds.git
+cd universally-accessible-playgrounds
+```
+
+---
+
+### Install dependencies
+
+```bash
+npm install
+```
+
+This sets up your local node_modules based on package.json.
+
+---
+
+### Start the local dev server
+
+```bash
+npm run dev
+```
+
+This runs the site locally with Vite.
+By default, it should be available at http://localhost:5173.
+
+---
+
+### Project Structure
+
+```bash
+universally-accessible-playgrounds/
+│
+├── public/               # HTML entry point and static assets
+│   └── index.html
+│
+├── src/                  # App source code
+│   ├── components/       # Reusable components (Header, Footer, Map)
+│   ├── pages/            # Individual pages (Home, Playgrounds)
+│   ├── styles/           # Global or component styles (optional)
+│   ├── App.jsx           # Main app layout & router
+│   ├── index.js          # React bootstrap
+│
+├── .gitignore            # Files and folders to ignore in Git
+├── package.json          # Project dependencies and scripts
+├── README.md             # Project instructions and info
+```
+---
+### Maintainers
+
+This project is maintained by the Accessible Parks Project team.
+Please keep this README updated as the project grows!
+
