@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer style={{ background: '#eee', padding: '1rem', textAlign: 'center' }}>
+    <footer className="footer">
       <p>© 2025 Accessible Parks Project</p>
     </footer>
   );

@@ -2,7 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Layout from './Layouts/Layout.jsx';
 import PlaygroundsLayout from './Layouts/PlaygroundsLayout.jsx';
 import Home from './pages/Home.jsx';
-import PlaygroundsList from './pages/PlaygroundsList.jsx';
+import PlaygroundsList from './pages/Playgrounds.jsx';
 import PlaygroundDetails from './pages/PlaygroundDetails.jsx';
 import About from './pages/About.jsx';
 import NoPage from './pages/NoPage.jsx';

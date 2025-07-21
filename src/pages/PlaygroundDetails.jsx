@@ -1,5 +1,5 @@
 // PlaygroundDetails.jsx
-import { useParams } from 'react-router-dom'
+import { useParams, Link } from 'react-router-dom'
 import { playgrounds } from '../data/playgroundData.js'
 import PlaygroundsMap from '../components/PlaygroundsMap.jsx'
 
@@ -12,11 +12,15 @@ export default function PlaygroundDetails() {
   }
 
   return (
-    <div>
-      <h1>Details for {playground.name}</h1>
-      <p>{playground.description}</p>
-      <p>Coordinates: {playground.lat}, {playground.lng}</p>
-      <PlaygroundsMap playgrounds={ playgrounds } highlightID={ playgroundID } />
-    </div>
+    <>
+        <h2 className='info-heading'>{playground.name}</h2>
+        <p className='description'>
+            {playground.description}<br />
+            Coordinates: {playground.lat}, {playground.lng}
+        </p>
+        <div className='playgrounds-map'>
+            <PlaygroundsMap playgrounds={ playgrounds } highlightID={ playgroundID } />
+        </div>
+    </>
   );
 }
