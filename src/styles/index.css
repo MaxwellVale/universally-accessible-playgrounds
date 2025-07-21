@@ -65,12 +65,22 @@ header {
 }
 
 footer {
+  display: flex;
   margin-top: auto;
   background: var(--pakistan-green);
   color: var(--cornsilk);
-  padding: 1rem;
-  text-align: center;
+  justify-content: center;
   width: 100%;
+}
+
+footer p {
+  padding: 1rem;
+}
+
+.logo {
+  padding: 1rem;
+  max-height: 50px; /* prevent the logo from being massive, but can get smaller if need be */
+  width: auto;
 }
 
 .page-content {

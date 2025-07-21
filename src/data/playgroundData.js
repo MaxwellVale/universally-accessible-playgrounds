@@ -5,6 +5,15 @@ export const playgrounds = [
     lat: 34.1001,
     lng: -118.1803,
     description: 'An accessible playground in Hermon Park...',
+    images: ['/src/assets/Hermon.jpg', ],
+    reviews: [
+        {author: 'Jane D.', content: 'Great accessible swings!', review: 5},
+        {author: 'Darwin, C.', content: 'Could use more accessible walkways...', review: 3}
+    ],
+    features: [
+        'Accessible ramp',
+        'Inclusive swings'
+    ]
   },
   {
     id: 'GriffithPark',
