@@ -77,7 +77,7 @@ function CenterCoords() {
         borderRadius: '4px',
         fontSize: '12px',
         fontFamily: 'monospace',
-        zIndex: 1000,
+        zIndex: 1000, // something with the layering of the assets got messed up, need to look into proper fix for this
       }}
     >
       {center.lat.toFixed(5)}, {center.lng.toFixed(5)}
@@ -85,17 +85,77 @@ function CenterCoords() {
   );
 }
 
+function HomeButton({ homeCenter = [[34.05, -118.25]] }) {
+  const map = useMap();
+
+  useEffect(() => {
+    const homeButton = L.control({position: 'topleft'});
+
+    homeButton.onAdd = () => {
+      const container = L.DomUtil.create('div', 'leaflet-bar');
+      const link = L.DomUtil.create('img', '', container);
+      link.href = '#';
+      link.title = 'Return to home view';
+      
+      // overlay svg onto the button
+      const img = L.DomUtil.create('img', '', link);
+      img.src = '/public/home-icon-silhouette-svgrepo-com.svg';
+      img.width = 20;
+      img.height = 20;
+      img.alt = 'Home';
+
+      link.style.width = '30px'; // trying to control the button size to match the built in zoom buttons
+      link.style.height = '30px';
+      link.style.display = 'flex';
+      link.style.justifyContent = 'center';
+
+      // const div = L.DomUtil.create('div', 'leaflet-bar leaflet-control');
+      // div.style.backgroundColor = '#fff';
+      // div.style.cursor = 'pointer';
+      // div.style.padding = '5px';
+      // div.innerHTML = '📍';
+
+      // div.onclick = () => {
+      //   const home = playground ? [playground.lat, playground.lng] : [34.05, -118.25];
+      //   console.log('playground:', playground);
+      //   console.log('home:', home);
+      //   map.setView(home);
+      // };
+
+      L.DomEvent.on(link, 'click', L.DomEvent.stopPropagation) 
+        .on(link, 'click', L.DomEvent.preventDefault)
+        .on(link, 'click', () => {
+          if (map && Array.isArray(homeCenter) && homeCenter.length ===2) {
+            map.flyTo(homeCenter)
+          }
+          console.log('home:', homeCenter);
+
+        });
+
+      return container;
+    };
+
+    homeButton.addTo(map);
+
+    return () => homeButton.remove();
+  }, [map, homeCenter]);
+
+  return null;
+}
+
 export default function PlaygroundsMap({ playgrounds, highlightID = null }) {
   const playground = playgrounds.find(p => p.id === highlightID);
-  // L.control.scale().addTo(map);
+  const homeCenter = playground && typeof playground.lat === 'number' && typeof playground.lng === 'number' 
+    ? [playground.lat, playground.lng] : [34.05, -118.25];
+
   return (
     // ensure that keyboard operability is maintained by using built-in MapContainer and Marker components
     <MapContainer 
       key={highlightID} // force a refresh of the <MapContainer> whenever the key changes
-      center={playground ? [playground.lat, playground.lng] : [34.05, -118.25]} 
+      center={homeCenter}
       zoom={11} 
-      style={{ height: '500px', width: '100%' }}
-      wheelPxPerZoomLevel={200}
+      style={{ height: '400px', width: '100%' }}
+      wheelPxPerZoomLevel={100}
       zoomSnap={0.25}
       zoomDelta={0.25}
     >
@@ -107,6 +167,7 @@ export default function PlaygroundsMap({ playgrounds, highlightID = null }) {
       <LocateButton />
       <ScaleControl />
       <CenterCoords />
+      <HomeButton homeCenter={homeCenter} />
       {playgrounds.map(p => (
         <Marker 
           alt={p.name} // markers need to have unique and descriptive labels for accessibility purposes (screen readers)
