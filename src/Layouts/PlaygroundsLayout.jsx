@@ -1,6 +1,11 @@
 import { Outlet, Link } from 'react-router-dom'
 import { playgrounds } from '../data/playgroundData.js'
 
+playgrounds.sort((a, b) => {
+  return a.name.localeCompare(b.name);
+});
+console.log(playgrounds);
+
 export default function PlaygroundsLayout() {
   return (
     <>

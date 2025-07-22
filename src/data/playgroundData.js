@@ -101,5 +101,90 @@ export const playgrounds = [
         'None listed'
     ]
   },
+  {
+    id: 'Dearborn',
+    name: 'Dearborn Park',
+    address: '17141 Nordhoff St., Northridge, CA 91325',
+    lat: 34.236556,
+    lng: -118.507927, 
+    description: 'A playground near a dam??',
+    images: ['/src/assets/HansenDam1.jpg', ],
+    reviews: [
+        {author: 'Jane D.', content: 'Great accessible swings!', review: 5},
+        {author: 'Darwin, C.', content: 'Could use more accessible walkways...', review: 3}
+    ],
+    features: [
+        'Basketball Courts (Lighted / Outdoor)', 
+        'Childrens Play Area'
+    ]
+  },
+  {
+    id: 'DeGarmo',
+    name: 'De Garmo Park',
+    address: '10145 Arminta St., Sun Valley, CA 91352',
+    lat: 34.215039,
+    lng: -118.353476, 
+    description: 'Do not know much.',
+    images: ['/src/assets/HansenDam1.jpg', ],
+    reviews: [
+        {author: 'Jane D.', content: 'Great accessible swings!', review: 5},
+        {author: 'Darwin, C.', content: 'Could use more accessible walkways...', review: 3}
+    ],
+    features: [
+        'Picnic Tables'
+    ]
+  },
+  {
+    id: 'BillRosendahl',
+    name: 'Bill Rosendahl Del Rey Park',
+    address: '4601 Alla Rd., Los Angeles, CA 90292',
+    lat: 33.984613,
+    lng: -118.431051, 
+    description: 'A playground near a dam??',
+    images: ['/src/assets/HansenDam1.jpg', ],
+    reviews: [
+        {author: 'Jane D.', content: 'Great accessible swings!', review: 5},
+        {author: 'Darwin, C.', content: 'Could use more accessible walkways...', review: 3}
+    ],
+    features: [
+        'Paddle Tennis', 
+        'Childrens Play Area',
+        'Off-Leash Dog Park'
+    ]
+  },
+  {
+    id: 'BennyHPotter',
+    name: 'Benny H Potter West Adams Avenues Memoral Park',
+    address: '2413 Second Ave, Los Angeles, CA 90018',
+    lat: 34.034386,
+    lng: -118.319397, 
+    description: 'A memorial park that hosts several after school and summer programas for kids.',
+    images: ['/src/assets/HansenDam1.jpg', ],
+    reviews: [
+        {author: 'Jane D.', content: 'Great accessible swings!', review: 5},
+        {author: 'Darwin, C.', content: 'Could use more accessible walkways...', review: 3}
+    ],
+    features: [
+        'Basketball Courts (Lighted / Outdoor)', 
+        'Childrens Play Area'
+    ]
+  },
+  {
+    id: 'BaldwinHills',
+    name: 'Baldwin Hills Recreation Center',
+    address: '5401 Highlight Pl., Los Angeles, CA 90016',
+    lat: 34.023511,
+    lng: -118.364202, 
+    description: 'A playground near a dam??',
+    images: ['/src/assets/HansenDam1.jpg', ],
+    reviews: [
+        {author: 'Jane D.', content: 'Great accessible swings!', review: 5},
+        {author: 'Darwin, C.', content: 'Could use more accessible walkways...', review: 3}
+    ],
+    features: [
+        'Basketball Courts (Lighted / Outdoor)', 
+        'Childrens Play Area'
+    ]
+  },
   // add more...
 ];

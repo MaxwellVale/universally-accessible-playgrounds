@@ -99,7 +99,7 @@ function HomeButton({ homeCenter = [[34.05, -118.25]] }) {
       
       // overlay svg onto the button
       const img = L.DomUtil.create('img', '', link);
-      img.src = '/public/home-icon-silhouette-svgrepo-com.svg';
+      img.src = '/src/assets/home-icon-silhouette-svgrepo-com.svg';
       img.width = 20;
       img.height = 20;
       img.alt = 'Home';
@@ -108,19 +108,6 @@ function HomeButton({ homeCenter = [[34.05, -118.25]] }) {
       link.style.height = '30px';
       link.style.display = 'flex';
       link.style.justifyContent = 'center';
-
-      // const div = L.DomUtil.create('div', 'leaflet-bar leaflet-control');
-      // div.style.backgroundColor = '#fff';
-      // div.style.cursor = 'pointer';
-      // div.style.padding = '5px';
-      // div.innerHTML = '📍';
-
-      // div.onclick = () => {
-      //   const home = playground ? [playground.lat, playground.lng] : [34.05, -118.25];
-      //   console.log('playground:', playground);
-      //   console.log('home:', home);
-      //   map.setView(home);
-      // };
 
       L.DomEvent.on(link, 'click', L.DomEvent.stopPropagation) 
         .on(link, 'click', L.DomEvent.preventDefault)
