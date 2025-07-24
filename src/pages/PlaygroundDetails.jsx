@@ -29,12 +29,12 @@ export default function PlaygroundDetails() {
   const playground = playgrounds.find(p => p.id === playgroundID)
 
   const [currentSlide, setCurrentSlide] = useState(0); // defaulting to slide 0
-  const carouselRef = useRef();
+  const carouselRef = useRef(); // let's you reference and modify the specific carousel instance 
   const images = playground.images;
 
   const goToSlide = (index) => {
     setCurrentSlide(index);
-    carouselRef.current?.goToSlide(index);
+    carouselRef.current.goToSlide(index);
   };
 
   if (!playground) {
@@ -56,13 +56,12 @@ export default function PlaygroundDetails() {
                   responsive={responsive}
                   autoPlay={false}
                   containerClass='carousel-wrapper'
-                  // centerMode={true}
                   arrows
                   dotListClass=''
                   keyBoardControl
                   draggable
-                  renderDotsOutside
                   swipeable
+                  afterChange={(previousSlide, { currentSlide: newIndex }) => setCurrentSlide(newIndex)}
                 >
                     {images.map((image, index) => (
                       <div key={index} className='carousel-slide'>
@@ -70,9 +69,10 @@ export default function PlaygroundDetails() {
                           key={index} 
                           src={image} 
                           alt={`Slide ${index + 1}`} /* Change the alt of images to be more descriptive and accessible */
-                          onError={(e) => {
-                            e.target.style.display = 'none';
-                        }} /> 
+                          // onError={(e) => {
+                          //   e.target.style.display = 'none';
+                          // }}
+                        /> 
                       </div>
                     ))}
                 </Carousel>
@@ -80,8 +80,14 @@ export default function PlaygroundDetails() {
                 {/* See if this stuff works */}
                 <div className="thumbnails">
                   {images.map((img, idx) => (
-                    <button key={idx} onClick={() => goToSlide(idx)} className={idx === currentSlide ? "active" : ""}>
-                      <img src={img} alt={`Thumbnail ${idx + 1}`} />
+                    <button key={idx} onClick={() => goToSlide(idx)} className={idx === currentSlide ? "active" : "inactive"}>
+                      <img 
+                        src={img} 
+                        alt={`Thumbnail ${idx + 1}`}
+                        // onError={(e) => {
+                        //     e.target.style.display = 'none';
+                        // }} 
+                      />
                     </button>
                   ))}
                 </div>
