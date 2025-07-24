@@ -74,7 +74,11 @@ export const playgrounds = [
     lat: 34.060855,
     lng: -118.202570, 
     description: 'A large playground in West Los Angeles with several accessibility features.',
-    images: ['/src/assets/Hazardous.jpg', ],
+    images: [
+        '/src/assets/HazardParkSign.jpg',
+        '/src/assets/HazardPlaygroundClose.jpg',
+        '/src/assets/HazardSwings.jpg'
+     ],
     reviews: [
         {author: 'Jane D.', content: 'Great accessible swings!', review: 5},
         {author: 'Darwin, C.', content: 'Could use more accessible walkways...', review: 3}

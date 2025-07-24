@@ -1,10 +1,11 @@
 import { Outlet, Link } from 'react-router-dom'
 import { playgrounds } from '../data/playgroundData.js'
 
+// sort the playgrounds alphabetically to show in the sidebar
 playgrounds.sort((a, b) => {
   return a.name.localeCompare(b.name);
-});
-console.log(playgrounds);
+}); 
+// console.log(playgrounds);
 
 export default function PlaygroundsLayout() {
   return (

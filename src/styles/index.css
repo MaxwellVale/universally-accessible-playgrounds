@@ -85,7 +85,7 @@ footer p {
 
 .page-content {
   display: flex;
-  max-width: 1500px;
+  max-width: 2000px;
   /* margin: 0 auto; */
   padding: 0 2rem;
   box-sizing: border-box;
@@ -138,13 +138,57 @@ footer p {
   padding: 0.5rem 1rem;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
-  display: block; /* inline-block to get it to hug the heading text instead */
+  display: block; /* change to inline-block to get it to hug the heading text instead */
   margin-top: 1rem;
   margin-bottom: 0;
 }
 
 .description {
-  padding: 0.5rem 0rem;
+  padding: 0.5rem;
+}
+
+.carousel-wrapper {
+  display: flex;
+  width: 100%;
+  max-width: 1000px;
+  padding-bottom: 1rem;
+  
+}
+
+.carousel-slide {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16/9;
+  overflow: hidden;
+}
+
+.carousel-slide img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* use cover instead to always fill the viewport */
+  background-color: var(--cornsilk);
+  display: block;
+}
+
+.thumbnails {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.thumbnails button {
+  border: none;
+  background: none; 
+  padding: 0;
+  cursor: pointer;
+}
+
+.thumbnails img {
+  width: 80px;
+  height: 60px;
+  object-fit: cover;
+  border: 2px solid transparent;
 }
 
 .playground-map {
