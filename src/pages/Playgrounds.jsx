@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom';
 import PlaygroundsMap from '../components/PlaygroundsMap.jsx';
 import { playgrounds } from '../data/playgroundData.js';
 

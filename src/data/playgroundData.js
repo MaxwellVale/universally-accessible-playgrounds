@@ -34,6 +34,7 @@ export const playgrounds = [
   },
   {
     id: 'AidansPlace',
+    place_id: 'ChIJ0fVghny7woARiQ-rsrUqMWU',
     name: 'Aidan\'s Place at Westwood Recreation Center',
     address: '1350S> Sepulveda, Los Angeles, CA 90024',
     lat: 34.053129,
