@@ -19,6 +19,7 @@ export const playgrounds = [
   },
   {
     id: 'GriffithPark',
+    place_id: '',
     name: 'Griffith Park',
     lat: 34.1367,
     lng: -118.2942,
@@ -53,6 +54,7 @@ export const playgrounds = [
   },
   {
     id: 'HowardFinn',
+    place_id: 'ChIJS44_oaqUwoARjlEdYUVOzfE',
     name: 'Howard Finn Park',
     address: '7747 Foothill Boulevard, Sunland, CA 91402',
     lat: 34.257833,
@@ -71,6 +73,7 @@ export const playgrounds = [
   },
   {
     id: 'Hazard',
+    place_id: 'ChIJ63p5ON7FwoARfbbdWG0wWRw',
     name: 'Hazard Recreation Center',
     address: '2230 Norfolk St., Los Angeles, CA 91402',
     lat: 34.060855,

@@ -97,6 +97,7 @@ footer p {
   width: 400px;
   padding: 1rem;
   box-sizing: border-box;
+  resize: both;
 }
 
 .sidebar-heading {
@@ -111,6 +112,9 @@ footer p {
 }
 
 .sidebar-content {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
   background: #f9f9f9;
   margin: 0;
   padding: 1rem;

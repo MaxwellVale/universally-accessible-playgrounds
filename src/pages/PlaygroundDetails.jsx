@@ -28,7 +28,7 @@ export default function PlaygroundDetails() {
   const { playgroundID } = useParams()
   const playground = playgrounds.find(p => p.id === playgroundID)
 
-  if (!playground) { // this will happen if no playground in the database matches playgroundID
+  if (!playground || !playground.place_id) { // this will happen if no playground in the database matches playgroundID
     return <h2>Playground not found.</h2>
   }
   else {
@@ -37,9 +37,12 @@ export default function PlaygroundDetails() {
     const images = playground.images;
 
     const [placeDetails, setPlaceDetails] = useState(null);
-    const API_KEY = 'AIzaSyCrpd1a5IDvaSRcXO7Ck3XZpQWUSb8Jg04'; // MOVE THIS TO A DIFFERENT FILE. KEY SHOULD NOT BE VIEWABLE THROUGH FRONTEND
+    // const API_KEY = 'AIzaSyCrpd1a5IDvaSRcXO7Ck3XZpQWUSb8Jg04'; // MOVE THIS TO A DIFFERENT FILE. KEY SHOULD NOT BE VIEWABLE THROUGH FRONTEND
+    const GOOGLE_API_KEY = import.meta.env.VITE_GOOGLE_API_KEY;
+    // console.log(GOOGLE_API_KEY);
     const place_id = playground.place_id;
-    const place_details_url = `https://places.googleapis.com/v1/places/${place_id}?fields=addressComponents,location,photos,reviews&key=${API_KEY}`;
+    const place_details_url = `https://places.googleapis.com/v1/places/${place_id}?fields=name,addressComponents,location,photos,reviews,attributions&key=${GOOGLE_API_KEY}`;
+    console.log(place_details_url);
 
     const goToSlide = (index) => {
       setCurrentSlide(index);
@@ -63,13 +66,10 @@ export default function PlaygroundDetails() {
     }, [playground.place_id]);
 
     const addressComponents = placeDetails?.addressComponents; // different parts of address in an array
-    const location = placeDetails?.location; // gets latitude and longitude for specified place
+    const location = placeDetails?.location; // retrieve latitude and longitude coords for the map markers
     const photos = placeDetails?.photos; // photo list
     const params = 'maxWidthPx=1000'; // need to set a maxHeightPx or maxWidthPx for this to work
     const reviews = placeDetails?.reviews; // review list 
-
-    playground.lat = location?.latitude;
-    playground.lng = location?.longitude;
   
     return (
       <>
@@ -97,7 +97,7 @@ export default function PlaygroundDetails() {
                         <div key={index} className='carousel-slide'>
                           <img 
                             key={index} 
-                            src={`https://places.googleapis.com/v1/${photo.name}/media?key=${API_KEY}&${params}`} 
+                            src={`https://places.googleapis.com/v1/${photo.name}/media?key=${GOOGLE_API_KEY}&${params}`} 
                             alt={`Slide ${index + 1}`} /* Change the alt of images to be more descriptive and accessible */
                             // onError={(e) => {
                             //   e.target.style.display = 'none';
@@ -112,7 +112,7 @@ export default function PlaygroundDetails() {
                     {photos.map((photo, idx) => (
                       <button key={idx} onClick={() => goToSlide(idx)} className={idx === currentSlide ? "active" : "inactive"}>
                         <img 
-                          src={`https://places.googleapis.com/v1/${photo.name}/media?key=${API_KEY}&${params}`} 
+                          src={`https://places.googleapis.com/v1/${photo.name}/media?key=${GOOGLE_API_KEY}&${params}`} 
                           alt={`Thumbnail ${idx + 1}`}
                           // onError={(e) => {
                           //     e.target.style.display = 'none';
