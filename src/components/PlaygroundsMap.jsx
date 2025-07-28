@@ -24,7 +24,7 @@ export const RedIcon = new L.Icon({
   shadowSize: [41, 41]
 });
 
-function ScaleControl() {
+function ScaleControl() { // to show live scale bars when zooming
   const map = useMap();
 
   useEffect(() => {
@@ -52,7 +52,7 @@ function ScaleControl() {
 
 }
 
-function CenterCoords() {
+function CenterCoords() { // tracks the current location of the center of the viewport (lat, lng)
   const map = useMap();
   const [center, setCenter] = useState(map.getCenter()); // useState to track dynamically changing attribute and display on page
 
@@ -85,7 +85,7 @@ function CenterCoords() {
   );
 }
 
-function HomeButton({ homeCenter = [[34.05, -118.25]] }) {
+function HomeButton({ homeCenter = [[34.05, -118.25]] }) { // create button to return to the map instance's default view
   const map = useMap();
 
   useEffect(() => {
@@ -164,7 +164,7 @@ export default function PlaygroundsMap({ playgrounds, highlightID = null }) {
         >
           <Popup>
             <b>{p.name}</b><br />
-            <Link to={`/playgrounds/${p.id}`}>View Details</Link>
+            <Link to={`/playgrounds/${p.id}`}>View Details</Link> {/* have map button link to playground details page */}
           </Popup>
         </Marker>
       ))}

@@ -1,6 +1,7 @@
 export const playgrounds = [
   {
     id: 'HermonPark',
+    place_id: 'ChIJLSJcpaLDwoARuc6czwagtws',
     name: 'Hermon Park (Arroyo Seco Park)',
     address: '5566 Via Marisol, Los Angeles, CA 90042',
     lat: 34.1001,
@@ -176,6 +177,7 @@ export const playgrounds = [
   },
   {
     id: 'BaldwinHills',
+    place_id: 'ChIJdbq4ery5woARIivTg_76ZMM',
     name: 'Baldwin Hills Recreation Center',
     address: '5401 Highlight Pl., Los Angeles, CA 90016',
     lat: 34.023511,

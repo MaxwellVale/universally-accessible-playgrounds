@@ -37,8 +37,9 @@ export default function PlaygroundDetails() {
     const images = playground.images;
 
     const [placeDetails, setPlaceDetails] = useState(null);
-    const API_KEY = 'AIzaSyCrpd1a5IDvaSRcXO7Ck3XZpQWUSb8Jg04';
-    const place_details_url = `https://places.googleapis.com/v1/places/ChIJ0fVghny7woARiQ-rsrUqMWU?fields=addressComponents,photos,reviews&key=${API_KEY}`;
+    const API_KEY = 'AIzaSyCrpd1a5IDvaSRcXO7Ck3XZpQWUSb8Jg04'; // MOVE THIS TO A DIFFERENT FILE. KEY SHOULD NOT BE VIEWABLE THROUGH FRONTEND
+    const place_id = playground.place_id;
+    const place_details_url = `https://places.googleapis.com/v1/places/${place_id}?fields=addressComponents,location,photos,reviews&key=${API_KEY}`;
 
     const goToSlide = (index) => {
       setCurrentSlide(index);
@@ -61,72 +62,74 @@ export default function PlaygroundDetails() {
       fetchPlaceDetails();
     }, [playground.place_id]);
 
-    if (placeDetails) {
-      const addressComponents = placeDetails.addressComponents; // different parts of address in an array
-      const photos = placeDetails.photos; // photo list
-      const params = 'maxWidthPx=1000'; // need to set a maxHeightPx or maxWidthPx for this to work
-      const reviews = placeDetails.reviews; // review list 
-    
-      return (
-        <>
-            <h2 className='info-heading'>{playground.name}</h2>
-            <p className='description'>
-                {playground.description}<br />
-                Coordinates: {playground.lat}, {playground.lng}
-            </p> 
-            {/* Render the image carousel if there are images in the database for this playground */}
-            {photos && photos.length > 0 && (
-                <div className='carousel-wrapper'>
-                    <Carousel
-                      ref={carouselRef}
-                      responsive={responsive}
-                      autoPlay={false}
-                      containerClass='carousel-wrapper'
-                      arrows
-                      dotListClass=''
-                      keyBoardControl
-                      draggable
-                      swipeable
-                      afterChange={(previousSlide, { currentSlide: newIndex }) => setCurrentSlide(newIndex)}
-                    >
-                        {photos.map((photo, index) => (
-                          <div key={index} className='carousel-slide'>
-                            <img 
-                              key={index} 
-                              src={`https://places.googleapis.com/v1/${photo.name}/media?key=${API_KEY}&${params}`} 
-                              alt={`Slide ${index + 1}`} /* Change the alt of images to be more descriptive and accessible */
-                              // onError={(e) => {
-                              //   e.target.style.display = 'none';
-                              // }}
-                            /> 
-                          </div>
-                        ))}
-                    </Carousel>
+    const addressComponents = placeDetails?.addressComponents; // different parts of address in an array
+    const location = placeDetails?.location; // gets latitude and longitude for specified place
+    const photos = placeDetails?.photos; // photo list
+    const params = 'maxWidthPx=1000'; // need to set a maxHeightPx or maxWidthPx for this to work
+    const reviews = placeDetails?.reviews; // review list 
 
-                    {/* See if this stuff works */}
-                    <div className="thumbnails">
-                      {photos.map((photo, idx) => (
-                        <button key={idx} onClick={() => goToSlide(idx)} className={idx === currentSlide ? "active" : "inactive"}>
+    playground.lat = location?.latitude;
+    playground.lng = location?.longitude;
+  
+    return (
+      <>
+          <h2 className='info-heading'>{playground.name}</h2>
+          <p className='description'>
+              {playground.description}<br />
+              Coordinates: {playground.lat}, {playground.lng}
+          </p> 
+          {/* Render the image carousel if there are images in the database for this playground */}
+          {photos && photos.length > 0 && (
+              <div className='carousel-wrapper'>
+                  <Carousel
+                    ref={carouselRef}
+                    responsive={responsive}
+                    autoPlay={false}
+                    containerClass='carousel-wrapper'
+                    arrows
+                    dotListClass=''
+                    keyBoardControl
+                    draggable
+                    swipeable
+                    afterChange={(previousSlide, { currentSlide: newIndex }) => setCurrentSlide(newIndex)}
+                  >
+                      {photos.map((photo, index) => (
+                        <div key={index} className='carousel-slide'>
                           <img 
+                            key={index} 
                             src={`https://places.googleapis.com/v1/${photo.name}/media?key=${API_KEY}&${params}`} 
-                            alt={`Thumbnail ${idx + 1}`}
+                            alt={`Slide ${index + 1}`} /* Change the alt of images to be more descriptive and accessible */
                             // onError={(e) => {
-                            //     e.target.style.display = 'none';
-                            // }} 
-                          />
-                        </button>
+                            //   e.target.style.display = 'none';
+                            // }}
+                          /> 
+                        </div>
                       ))}
-                    </div>
-                </div>
-            )}
-            
-            
-            <div className='playgrounds-map'>
-                <PlaygroundsMap playgrounds={ playgrounds } highlightID={ playgroundID } />
-            </div>
-        </>
-      );
-    }
+                  </Carousel>
+
+                  {/* See if this stuff works */}
+                  <div className="thumbnails">
+                    {photos.map((photo, idx) => (
+                      <button key={idx} onClick={() => goToSlide(idx)} className={idx === currentSlide ? "active" : "inactive"}>
+                        <img 
+                          src={`https://places.googleapis.com/v1/${photo.name}/media?key=${API_KEY}&${params}`} 
+                          alt={`Thumbnail ${idx + 1}`}
+                          // onError={(e) => {
+                          //     e.target.style.display = 'none';
+                          // }} 
+                        />
+                      </button>
+                    ))}
+                  </div>
+              </div>
+          )}
+          
+          
+          <div className='playgrounds-map'>
+              <PlaygroundsMap playgrounds={ playgrounds } highlightID={ playgroundID } />
+          </div>
+      </>
+    );
   }
 
   
