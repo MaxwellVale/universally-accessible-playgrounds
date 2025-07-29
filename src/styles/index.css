@@ -94,10 +94,11 @@ footer p {
 }
 
 .sidebar {
-  width: 400px;
+  min-width: 200px;
+  max-width: 400px;
   padding: 1rem;
   box-sizing: border-box;
-  resize: both;
+  resize: horizontal;
 }
 
 .sidebar-heading {
@@ -112,7 +113,6 @@ footer p {
 }
 
 .sidebar-content {
-  white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
   background: #f9f9f9;
@@ -134,7 +134,7 @@ footer p {
 
 .playgrounds-main {
   flex: 1; /* grow to fill space */
-  min-width: 0;
+  min-width: 500px;
   padding: 1rem;
   box-sizing: border-box;
 }

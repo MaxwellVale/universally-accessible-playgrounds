@@ -19,7 +19,7 @@ export const playgrounds = [
   },
   {
     id: 'GriffithPark',
-    place_id: '',
+    place_id: 'ChIJ9590IY3AwoARquS6ie60MUc',
     name: 'Griffith Park',
     lat: 34.1367,
     lng: -118.2942,
@@ -145,6 +145,7 @@ export const playgrounds = [
   },
   {
     id: 'BillRosendahl',
+    place_id: 'ChIJYfs2cnm6woARFTl55j5MCJM',
     name: 'Bill Rosendahl Del Rey Park',
     address: '4601 Alla Rd., Los Angeles, CA 90292',
     lat: 33.984613,
