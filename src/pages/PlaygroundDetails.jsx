@@ -34,15 +34,12 @@ export default function PlaygroundDetails() {
   else {
     const [currentSlide, setCurrentSlide] = useState(0); // defaulting to slide 0
     const carouselRef = useRef(); // let's you reference and modify the specific carousel instance 
-    const images = playground.images;
 
     const [placeDetails, setPlaceDetails] = useState(null);
-    // const API_KEY = 'AIzaSyCrpd1a5IDvaSRcXO7Ck3XZpQWUSb8Jg04'; // MOVE THIS TO A DIFFERENT FILE. KEY SHOULD NOT BE VIEWABLE THROUGH FRONTEND
     const GOOGLE_API_KEY = import.meta.env.VITE_GOOGLE_API_KEY;
-    // console.log(GOOGLE_API_KEY);
     const place_id = playground.place_id;
-    const place_details_url = `https://places.googleapis.com/v1/places/${place_id}?fields=name,addressComponents,location,photos,reviews,attributions&key=${GOOGLE_API_KEY}`;
-    console.log(place_details_url);
+    const place_details_url = `https://places.googleapis.com/v1/places/${place_id}?fields=name,displayName,formattedAddress,addressComponents,nationalPhoneNumber,location,photos,reviews,attributions&key=${GOOGLE_API_KEY}`;
+    console.log('Google API Place Details URL:', place_details_url);
 
     const goToSlide = (index) => {
       setCurrentSlide(index);
@@ -55,8 +52,13 @@ export default function PlaygroundDetails() {
           console.log('Fetching place details');
           const res = await fetch(place_details_url);
           const data = await res.json();
-          console.log('Google API results: ', data); // should contain arrays for address information, photos, and reviews
-          setPlaceDetails(data);
+          if (data) {
+            console.log('Google API results: ', data); // should contain arrays for address information, photos, and reviews
+            setPlaceDetails(data);  
+          }
+          else {
+            (console.error('Error from Google API:', data))
+          }
         }
         catch (error) {
           console.error('Error fetching playground details', error);
@@ -65,6 +67,8 @@ export default function PlaygroundDetails() {
       fetchPlaceDetails();
     }, [playground.place_id]);
 
+    const displayName = placeDetails?.displayName;
+    const formattedAddress = placeDetails?.formattedAddress;
     const addressComponents = placeDetails?.addressComponents; // different parts of address in an array
     const location = placeDetails?.location; // retrieve latitude and longitude coords for the map markers
     const photos = placeDetails?.photos; // photo list
@@ -73,11 +77,13 @@ export default function PlaygroundDetails() {
   
     return (
       <>
-          <h2 className='info-heading'>{playground.name}</h2>
-          <p className='description'>
-              {playground.description}<br />
-              Coordinates: {playground.lat}, {playground.lng}
-          </p> 
+          <h2 className='info-heading'>{displayName?.text}</h2>
+          <div className='description'>
+              <p>{playground.description}</p>
+              <p>Address: {placeDetails?.formattedAddress}</p>
+              <p>Phone Number: {placeDetails?.nationalPhoneNumber}</p>
+              <p>Coordinates: {location?.latitude}, {location?.longitude}</p>
+          </div> 
           {/* Render the image carousel if there are images in the database for this playground */}
           {photos && photos.length > 0 && (
               <div className='carousel-wrapper'>
@@ -124,10 +130,34 @@ export default function PlaygroundDetails() {
               </div>
           )}
           
-          
+          <h3>Reviews</h3>
+          {placeDetails?.reviews?.length > 0 ? (
+            <ul>
+              {placeDetails.reviews.map((review, index) => (
+                <li key={index}>
+                  <p>{review.authorAttribution?.displayName}</p>
+                  <p>{review.originalText?.text}</p>
+                </li>
+              ))}
+            </ul>
+          ) : (
+            <p>No reviews available.</p>
+          )}
           <div className='playgrounds-map'>
-              <PlaygroundsMap playgrounds={ playgrounds } highlightID={ playgroundID } />
+              <PlaygroundsMap playgrounds={ playgrounds } highlightID={ playgroundID } center={[placeDetails?.latitude, placeDetails?.longitude]} />
           </div>
+          {/* {placeDetails.reviews && (
+            <div>
+              <h4>Reviews</h4>
+              <ul>
+                {placeDetails?.reviews.map((review, index) => (
+                  <li key={index}>
+                    <strong>{review.author_name}</strong> ({review.rating}★): {review.text}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )} */}
       </>
     );
   }

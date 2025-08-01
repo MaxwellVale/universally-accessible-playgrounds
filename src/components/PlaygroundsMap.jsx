@@ -130,7 +130,7 @@ function HomeButton({ homeCenter = [[34.05, -118.25]] }) { // create button to r
   return null;
 }
 
-export default function PlaygroundsMap({ playgrounds, highlightID = null }) {
+export default function PlaygroundsMap({ playgrounds, highlightID = null, center = [[34.05, -118.25]] }) {
   const playground = playgrounds.find(p => p.id === highlightID);
   const homeCenter = playground && typeof playground.lat === 'number' && typeof playground.lng === 'number' 
     ? [playground.lat, playground.lng] : [34.05, -118.25];

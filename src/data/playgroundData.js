@@ -96,6 +96,7 @@ export const playgrounds = [
   },
   {
     id: 'HansenDam',
+    place_id: 'ChIJ129EQTmTwoARqpPW-D8Xdfc',
     name: 'Hansen Dam Recreation Area',
     address: '11770 Foothill Blvd., Lake View Terrace, CA 91342',
     lat: 34.270672,
@@ -112,6 +113,7 @@ export const playgrounds = [
   },
   {
     id: 'Dearborn',
+    place_id: 'ChIJxZVuw2eawoARQt9SzLYrfDI',
     name: 'Dearborn Park',
     address: '17141 Nordhoff St., Northridge, CA 91325',
     lat: 34.236556,
@@ -129,6 +131,7 @@ export const playgrounds = [
   },
   {
     id: 'DeGarmo',
+    place_id: 'ChIJ1-Hls9_YgoAROTVQl8M3QJI',
     name: 'De Garmo Park',
     address: '10145 Arminta St., Sun Valley, CA 91352',
     lat: 34.215039,
@@ -164,6 +167,7 @@ export const playgrounds = [
   },
   {
     id: 'BennyHPotter',
+    place_id: 'ChIJpyi3amm4woARSkx6OdEnQis',
     name: 'Benny H Potter West Adams Avenues Memoral Park',
     address: '2413 Second Ave, Los Angeles, CA 90018',
     lat: 34.034386,
@@ -197,5 +201,12 @@ export const playgrounds = [
         'Childrens Play Area'
     ]
   },
+  {
+    id: 'HarvardPark',
+    place_id: 'ChIJnZUvdtm3woARDE7LsazdD2Q',
+    name: 'Harvard Park',
+    lat: 33.983511, 
+    lng: -118.303790,
+  }
   // add more...
 ];
