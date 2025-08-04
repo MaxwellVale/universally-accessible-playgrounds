@@ -1,5 +1,5 @@
 import { Outlet, Link } from 'react-router-dom'
-import playgrounds from '../data/playgroundData.js'
+import playgrounds from '../data/PlaygroundData.js'
 
 // sort the playgrounds alphabetically to show in the sidebar
 playgrounds.sort((a, b) => {

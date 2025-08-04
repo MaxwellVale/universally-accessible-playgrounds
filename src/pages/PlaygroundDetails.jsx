@@ -1,7 +1,7 @@
 // PlaygroundDetails.jsx
 import { useState, useRef, useEffect } from 'react'
 import { useParams } from 'react-router-dom'
-import playgrounds from '../data/playgroundData.js'
+import playgrounds from '../data/PlaygroundData.js'
 import PlaygroundsMap from '../components/PlaygroundsMap.jsx'
 import Carousel from 'react-multi-carousel'
 import 'react-multi-carousel/lib/styles.css'
@@ -38,7 +38,7 @@ export default function PlaygroundDetails() {
 
     const [placeDetails, setPlaceDetails] = useState(null);
     const [loading, setLoading] = useState(true);
-    const GOOGLE_API_KEY = import.meta.env.VITE_GOOGLE_API_KEY;
+    const GOOGLE_API_KEY = import.meta.env.VITE_GOOGLE_API_KEY; // getting API key from .env file 
     const place_id = playground.place_id;
     const place_details_url = `https://places.googleapis.com/v1/places/${place_id}?fields=name,displayName,formattedAddress,addressComponents,nationalPhoneNumber,location,photos,reviews,attributions&key=${GOOGLE_API_KEY}`;
     // console.log('Google API Place Details URL:', place_details_url);
