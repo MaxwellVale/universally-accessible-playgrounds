@@ -46,9 +46,10 @@ universally-accessible-playgrounds/
 │   └── index.html
 │
 ├── src/                  # App source code
-│   ├── components/       # Reusable components (Header, Footer, Map)
-│   ├── pages/            # Individual pages (Home, Playgrounds)
-│   ├── styles/           # Global or component styles (optional)
+│   ├── components/       # Reusable components 
+│   ├── pages/            # Individual pages
+│   ├── data/             # Playground data files
+│   ├── styles/           # Global or component styles
 │   ├── App.jsx           # Main app layout & router
 │   ├── index.js          # React bootstrap
 │
