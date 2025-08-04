@@ -35,6 +35,12 @@ npm run dev
 This runs the site locally with Vite.
 By default, it should be available at http://localhost:5173.
 
+If you want to host the site on your local network
+
+```bash
+npm run dev --host
+```
+
 ---
 
 ### Project Structure
