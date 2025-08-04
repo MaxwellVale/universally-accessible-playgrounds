@@ -1,4 +1,4 @@
-export const playgrounds = [
+const playgrounds = [
   {
     id: 'HermonPark',
     place_id: 'ChIJLSJcpaLDwoARuc6czwagtws',
@@ -207,6 +207,39 @@ export const playgrounds = [
     name: 'Harvard Park',
     lat: 33.983511, 
     lng: -118.303790,
+  },
+  {
+    id: 'JaimeBethSlavinPark',
+    place_id: 'ChIJaWpUjbyWwoARCfs6tQK6YfQ',
+    name: 'Jaime Beth Slavin Park',
+    lat: 34.215323,
+    lng: -118.4066346,
+  },
+  {
+    "id": "KenMalloyHarborPark",
+    "place_id": "ChIJo_gGIPI13YARvx0X7t3i5nU",
+    "name": "Ken Malloy Harbor Regional Park",
+    "lat": 33.783516,
+    "lng": -118.29487599999999,
+    "address": "25820 Vermont Ave, Harbor City, CA 90710, USA"
+  },
+  {
+    id: 'AnthonyBeilensonPark',
+    place_id: 'ChIJY2aJIduZwoAR0L-BBNrkvBs',
+    lat: 34.181399899999995,
+    lng: -118.49847079999999,
+    address: "6300 Balboa Blvd, Van Nuys, CA 91406, USA",
+    name: "Lake Balboa/Anthony C. Beilenson Park"
+  },
+  {
+    id: 'LakeStreetPark',
+    place_id: 'ChIJv3680w3HwoAR0w8c_g6f9qc',
+    lat: 34.0689383,
+    lng: -118.2704805,
+    address: "227 N Lake St, Los Angeles, CA 90026, USA",
+    name: "Lake Street Community Center"
   }
   // add more...
 ];
+
+export default playgrounds;

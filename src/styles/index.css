@@ -207,6 +207,22 @@ footer p {
   border-color: var(--dark-moss-green);
 }
 
+.reviews {
+  padding: 1rem;
+  
+}
+
+.review-content {
+  list-style-type: none;
+  padding-left: 1rem;
+}
+
+/* .reviews li {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 0.5rem;
+  
+} */
+
 .playground-map {
   margin-top: 1rem;
 }

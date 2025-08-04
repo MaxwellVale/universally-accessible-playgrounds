@@ -130,16 +130,17 @@ function HomeButton({ homeCenter = [[34.05, -118.25]] }) { // create button to r
   return null;
 }
 
-export default function PlaygroundsMap({ playgrounds, highlightID = null, center = [[34.05, -118.25]] }) {
+export default function PlaygroundsMap({ playgrounds, highlightID = null, center = [34.05, -118.25] }) {
   const playground = playgrounds.find(p => p.id === highlightID);
-  const homeCenter = playground && typeof playground.lat === 'number' && typeof playground.lng === 'number' 
-    ? [playground.lat, playground.lng] : [34.05, -118.25];
+  // const homeCenter = playground && typeof playground.lat === 'number' && typeof playground.lng === 'number' 
+  //   ? [playground.lat, playground.lng] : [34.05, -118.25];
+  // console.log("Map center =", center);
 
   return (
     // ensure that keyboard operability is maintained by using built-in MapContainer and Marker components
     <MapContainer 
       key={highlightID} // force a refresh of the <MapContainer> whenever the key changes
-      center={homeCenter}
+      center={center}
       zoom={11} 
       style={{ height: '400px', width: '100%' }}
       wheelPxPerZoomLevel={100}
@@ -154,7 +155,7 @@ export default function PlaygroundsMap({ playgrounds, highlightID = null, center
       <LocateButton />
       <ScaleControl />
       <CenterCoords />
-      <HomeButton homeCenter={homeCenter} />
+      <HomeButton homeCenter={center} />
       {playgrounds.map(p => (
         <Marker 
           alt={p.name} // markers need to have unique and descriptive labels for accessibility purposes (screen readers)

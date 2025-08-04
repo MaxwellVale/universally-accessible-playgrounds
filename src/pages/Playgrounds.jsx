@@ -1,5 +1,5 @@
 import PlaygroundsMap from '../components/PlaygroundsMap.jsx';
-import { playgrounds } from '../data/playgroundData.js';
+import playgrounds from '../data/playgroundData.js';
 
 export default function Playgrounds() {
   return (

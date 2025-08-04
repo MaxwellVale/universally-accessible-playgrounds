@@ -1,7 +1,7 @@
 // PlaygroundDetails.jsx
 import { useState, useRef, useEffect } from 'react'
 import { useParams } from 'react-router-dom'
-import { playgrounds } from '../data/playgroundData.js'
+import playgrounds from '../data/playgroundData.js'
 import PlaygroundsMap from '../components/PlaygroundsMap.jsx'
 import Carousel from 'react-multi-carousel'
 import 'react-multi-carousel/lib/styles.css'
@@ -34,12 +34,14 @@ export default function PlaygroundDetails() {
   else {
     const [currentSlide, setCurrentSlide] = useState(0); // defaulting to slide 0
     const carouselRef = useRef(); // let's you reference and modify the specific carousel instance 
+    const thumbnailRef = useRef(); // reference for the thumbnail carousel 
 
     const [placeDetails, setPlaceDetails] = useState(null);
+    const [loading, setLoading] = useState(true);
     const GOOGLE_API_KEY = import.meta.env.VITE_GOOGLE_API_KEY;
     const place_id = playground.place_id;
     const place_details_url = `https://places.googleapis.com/v1/places/${place_id}?fields=name,displayName,formattedAddress,addressComponents,nationalPhoneNumber,location,photos,reviews,attributions&key=${GOOGLE_API_KEY}`;
-    console.log('Google API Place Details URL:', place_details_url);
+    // console.log('Google API Place Details URL:', place_details_url);
 
     const goToSlide = (index) => {
       setCurrentSlide(index);
@@ -47,6 +49,8 @@ export default function PlaygroundDetails() {
     };
 
     useEffect(() => {
+      setLoading(true);
+      setPlaceDetails(null);
       const fetchPlaceDetails = async () => {
         try {
           console.log('Fetching place details');
@@ -63,6 +67,9 @@ export default function PlaygroundDetails() {
         catch (error) {
           console.error('Error fetching playground details', error);
         }
+        finally {
+          setLoading(false);
+        }
       };
       fetchPlaceDetails();
     }, [playground.place_id]);
@@ -74,18 +81,23 @@ export default function PlaygroundDetails() {
     const photos = placeDetails?.photos; // photo list
     const params = 'maxWidthPx=1000'; // need to set a maxHeightPx or maxWidthPx for this to work
     const reviews = placeDetails?.reviews; // review list 
-  
+
+    if (!placeDetails) {
+      return <p>Loading details...</p>;
+    }
     return (
-      <>
+        <>
           <h2 className='info-heading'>{displayName?.text}</h2>
           <div className='description'>
               <p>{playground.description}</p>
-              <p>Address: {placeDetails?.formattedAddress}</p>
+              <p>Address: {formattedAddress}</p>
               <p>Phone Number: {placeDetails?.nationalPhoneNumber}</p>
               <p>Coordinates: {location?.latitude}, {location?.longitude}</p>
           </div> 
           {/* Render the image carousel if there are images in the database for this playground */}
-          {photos && photos.length > 0 && (
+          {loading ? (
+            <p>Fetching details...</p>
+          ) : photos && photos.length > 0 ? (
               <div className='carousel-wrapper'>
                   <Carousel
                     ref={carouselRef}
@@ -102,7 +114,6 @@ export default function PlaygroundDetails() {
                       {photos.map((photo, index) => (
                         <div key={index} className='carousel-slide'>
                           <img 
-                            key={index} 
                             src={`https://places.googleapis.com/v1/${photo.name}/media?key=${GOOGLE_API_KEY}&${params}`} 
                             alt={`Slide ${index + 1}`} /* Change the alt of images to be more descriptive and accessible */
                             // onError={(e) => {
@@ -115,6 +126,10 @@ export default function PlaygroundDetails() {
 
                   {/* See if this stuff works */}
                   <div className="thumbnails">
+                    <Carousel
+                      ref={thumbnailRef}
+                      responsive={responsive}
+                    >
                     {photos.map((photo, idx) => (
                       <button key={idx} onClick={() => goToSlide(idx)} className={idx === currentSlide ? "active" : "inactive"}>
                         <img 
@@ -126,16 +141,18 @@ export default function PlaygroundDetails() {
                         />
                       </button>
                     ))}
+                    </Carousel>
                   </div>
               </div>
-          )}
+            // ) : <p>No photos to show...</p>}
+          ) : <p>No photos to show.</p>} 
           
-          <h3>Reviews</h3>
-          {placeDetails?.reviews?.length > 0 ? (
-            <ul>
+          <h3 className='reviews'>Reviews</h3>
+          {reviews?.length > 0 ? (
+            <ul className='review-content'>
               {placeDetails.reviews.map((review, index) => (
                 <li key={index}>
-                  <p>{review.authorAttribution?.displayName}</p>
+                  <p><strong>{review.authorAttribution?.displayName}</strong> ({review.rating}*)</p>
                   <p>{review.originalText?.text}</p>
                 </li>
               ))}
@@ -144,23 +161,9 @@ export default function PlaygroundDetails() {
             <p>No reviews available.</p>
           )}
           <div className='playgrounds-map'>
-              <PlaygroundsMap playgrounds={ playgrounds } highlightID={ playgroundID } center={[placeDetails?.latitude, placeDetails?.longitude]} />
+              <PlaygroundsMap playgrounds={ playgrounds } highlightID={ playgroundID } center={[location?.latitude, location?.longitude]} />
           </div>
-          {/* {placeDetails.reviews && (
-            <div>
-              <h4>Reviews</h4>
-              <ul>
-                {placeDetails?.reviews.map((review, index) => (
-                  <li key={index}>
-                    <strong>{review.author_name}</strong> ({review.rating}★): {review.text}
-                  </li>
-                ))}
-              </ul>
-            </div>
-          )} */}
-      </>
+        </>
     );
   }
-
-  
 }
