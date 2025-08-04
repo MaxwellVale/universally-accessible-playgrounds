@@ -35,6 +35,12 @@ npm run dev
 This runs the site locally with Vite.
 By default, it should be available at http://localhost:5173.
 
+If you want to host the site on your local network
+
+```bash
+npm run dev --host
+```
+
 ---
 
 ### Project Structure
@@ -46,9 +52,10 @@ universally-accessible-playgrounds/
 │   └── index.html
 │
 ├── src/                  # App source code
-│   ├── components/       # Reusable components (Header, Footer, Map)
-│   ├── pages/            # Individual pages (Home, Playgrounds)
-│   ├── styles/           # Global or component styles (optional)
+│   ├── components/       # Reusable components 
+│   ├── pages/            # Individual pages
+│   ├── data/             # Playground data files
+│   ├── styles/           # Global or component styles
 │   ├── App.jsx           # Main app layout & router
 │   ├── index.js          # React bootstrap
 │
