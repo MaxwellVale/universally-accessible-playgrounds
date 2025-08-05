@@ -24,7 +24,8 @@ module.exports = [
     ],
     "features": [
       "Accessible ramp",
-      "Inclusive swings"
+      "Inclusive swings",
+      "Rubber floor play area"
     ]
   },
   {
@@ -51,7 +52,15 @@ module.exports = [
     ],
     "features": [
       "Accessible ramp",
-      "Easily navigable by wheelchair"
+      "Easily navigable by wheelchair",
+      "Inclusive merry-go-round",
+      "Inclusive see-saw seats",
+      "Inclusive swing seats",
+      "Rubber floor play area",
+      "Standalone sensory play options",
+      "Sand play area",
+      "Inclusive zipline seat",
+      "Large round swing"
     ]
   },
   {
@@ -79,7 +88,10 @@ module.exports = [
     ],
     "features": [
       "Accessible ramp",
-      "Inclusive swings"
+      "Rubber floor play area",
+      "Inclusive zipline seat",
+      "Inclusive swing seats",
+      "Standalone sensory play options"
     ]
   },
   {
@@ -108,7 +120,13 @@ module.exports = [
     "features": [
       "Childrens Play Area",
       "Picnic Tables",
-      "Volleyball Courts (Unlit)"
+      "Volleyball Courts (Unlit)",
+      "Community garden",
+      "Sand play area",
+      "Rubber floor area",
+      "Inclusive see-saw seats",
+      "Standalone sensory play options",
+      "Inclusive swing seats"
     ]
   },
   {
@@ -139,7 +157,10 @@ module.exports = [
     "features": [
       "Childrens Play Area",
       "Multipurpose Sports Field",
-      "Universally Accessible Playground (UAP)"
+      "Universally Accessible Playground (UAP)",
+      "Rubber floor play area",
+      "Standalone sensory play options",
+      "Accessible ramp"
     ]
   },
   {
@@ -166,7 +187,10 @@ module.exports = [
       }
     ],
     "features": [
-      "None listed"
+      "Accessible ramp",
+      "Rubber floor play area",
+      "Standalone sensory play options",
+      "Inclusive swing seats"
     ]
   },
   {
@@ -194,7 +218,13 @@ module.exports = [
     ],
     "features": [
       "Basketball Courts (Lighted / Outdoor)",
-      "Childrens Play Area"
+      "Childrens Play Area",
+      "Rubber floor play area",
+      "Sand play area",
+      "Water mister",
+      "Standalone sensory play options",
+      "Accessible ramp",
+      "Inclusive swing seats"
     ]
   },
   {
@@ -221,7 +251,9 @@ module.exports = [
       }
     ],
     "features": [
-      "Picnic Tables"
+      "Picnic Tables",
+      "Mulch play area",
+      "Inclusive swing seat"
     ]
   },
   {
@@ -250,7 +282,13 @@ module.exports = [
     "features": [
       "Paddle Tennis",
       "Childrens Play Area",
-      "Off-Leash Dog Park"
+      "Off-Leash Dog Park",
+      "Rubber floor play area",
+      "Accessible ramp",
+      "Inclusive swing seats",
+      "Sand play area",
+      "Standalone sensory play options",
+      "Standalone rock climbing wall"
     ]
   },
   {
@@ -278,7 +316,11 @@ module.exports = [
     ],
     "features": [
       "Basketball Courts (Lighted / Outdoor)",
-      "Childrens Play Area"
+      "Childrens Play Area",
+      "Accessible Ramp",
+      "Rubber floor play area",
+      "Sand play area",
+      "Inclusive swing seats"
     ]
   },
   {
@@ -306,7 +348,9 @@ module.exports = [
     ],
     "features": [
       "Basketball Courts (Lighted / Outdoor)",
-      "Childrens Play Area"
+      "Childrens Play Area",
+      "Accessible ramp",
+      "Rubber floor play area"
     ]
   },
   {
@@ -314,7 +358,16 @@ module.exports = [
     "place_id": "ChIJnZUvdtm3woARDE7LsazdD2Q",
     "name": "Harvard Park",
     "lat": 33.983511,
-    "lng": -118.30379
+    "lng": -118.30379,
+    "features": [
+      "Rubber floor play area",
+      "Accessible ramp",
+      "Inclusive merry-go-round",
+      "Turf floor obstacle course",
+      "Inclusive swing seats",
+      "Standalone sensory play options",
+      "Inclusive see-saw seats"
+    ]
   },
   {
     "id": "JaimeBethSlavinPark",
