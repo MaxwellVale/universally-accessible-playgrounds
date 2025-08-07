@@ -24,8 +24,7 @@ module.exports = [
     ],
     "features": [
       "Accessible ramp",
-      "Inclusive swings",
-      "Rubber floor play area"
+      "Inclusive swings"
     ]
   },
   {
@@ -52,15 +51,7 @@ module.exports = [
     ],
     "features": [
       "Accessible ramp",
-      "Easily navigable by wheelchair",
-      "Inclusive merry-go-round",
-      "Inclusive see-saw seats",
-      "Inclusive swing seats",
-      "Rubber floor play area",
-      "Standalone sensory play options",
-      "Sand play area",
-      "Inclusive zipline seat",
-      "Large round swing"
+      "Easily navigable by wheelchair"
     ]
   },
   {
@@ -88,10 +79,7 @@ module.exports = [
     ],
     "features": [
       "Accessible ramp",
-      "Rubber floor play area",
-      "Inclusive zipline seat",
-      "Inclusive swing seats",
-      "Standalone sensory play options"
+      "Inclusive swings"
     ]
   },
   {
@@ -120,13 +108,7 @@ module.exports = [
     "features": [
       "Childrens Play Area",
       "Picnic Tables",
-      "Volleyball Courts (Unlit)",
-      "Community garden",
-      "Sand play area",
-      "Rubber floor area",
-      "Inclusive see-saw seats",
-      "Standalone sensory play options",
-      "Inclusive swing seats"
+      "Volleyball Courts (Unlit)"
     ]
   },
   {
@@ -157,10 +139,7 @@ module.exports = [
     "features": [
       "Childrens Play Area",
       "Multipurpose Sports Field",
-      "Universally Accessible Playground (UAP)",
-      "Rubber floor play area",
-      "Standalone sensory play options",
-      "Accessible ramp"
+      "Universally Accessible Playground (UAP)"
     ]
   },
   {
@@ -187,10 +166,7 @@ module.exports = [
       }
     ],
     "features": [
-      "Accessible ramp",
-      "Rubber floor play area",
-      "Standalone sensory play options",
-      "Inclusive swing seats"
+      "None listed"
     ]
   },
   {
@@ -218,13 +194,7 @@ module.exports = [
     ],
     "features": [
       "Basketball Courts (Lighted / Outdoor)",
-      "Childrens Play Area",
-      "Rubber floor play area",
-      "Sand play area",
-      "Water mister",
-      "Standalone sensory play options",
-      "Accessible ramp",
-      "Inclusive swing seats"
+      "Childrens Play Area"
     ]
   },
   {
@@ -251,9 +221,7 @@ module.exports = [
       }
     ],
     "features": [
-      "Picnic Tables",
-      "Mulch play area",
-      "Inclusive swing seat"
+      "Picnic Tables"
     ]
   },
   {
@@ -282,13 +250,7 @@ module.exports = [
     "features": [
       "Paddle Tennis",
       "Childrens Play Area",
-      "Off-Leash Dog Park",
-      "Rubber floor play area",
-      "Accessible ramp",
-      "Inclusive swing seats",
-      "Sand play area",
-      "Standalone sensory play options",
-      "Standalone rock climbing wall"
+      "Off-Leash Dog Park"
     ]
   },
   {
@@ -316,11 +278,7 @@ module.exports = [
     ],
     "features": [
       "Basketball Courts (Lighted / Outdoor)",
-      "Childrens Play Area",
-      "Accessible Ramp",
-      "Rubber floor play area",
-      "Sand play area",
-      "Inclusive swing seats"
+      "Childrens Play Area"
     ]
   },
   {
@@ -348,9 +306,7 @@ module.exports = [
     ],
     "features": [
       "Basketball Courts (Lighted / Outdoor)",
-      "Childrens Play Area",
-      "Accessible ramp",
-      "Rubber floor play area"
+      "Childrens Play Area"
     ]
   },
   {
@@ -358,16 +314,7 @@ module.exports = [
     "place_id": "ChIJnZUvdtm3woARDE7LsazdD2Q",
     "name": "Harvard Park",
     "lat": 33.983511,
-    "lng": -118.30379,
-    "features": [
-      "Rubber floor play area",
-      "Accessible ramp",
-      "Inclusive merry-go-round",
-      "Turf floor obstacle course",
-      "Inclusive swing seats",
-      "Standalone sensory play options",
-      "Inclusive see-saw seats"
-    ]
+    "lng": -118.30379
   },
   {
     "id": "JaimeBethSlavinPark",
@@ -399,5 +346,125 @@ module.exports = [
     "lng": -118.2704805,
     "address": "227 N Lake St, Los Angeles, CA 90026, USA",
     "name": "Lake Street Community Center"
+  },
+  {
+    "id": "LincolnPark",
+    "place_id": "ChIJlVrAt9nFwoARsIhCc_AGd4c",
+    "lat": 34.066548,
+    "lng": -118.20076230000001,
+    "address": "3501 Valley Blvd, Los Angeles, CA 90031, USA",
+    "name": "Lincoln Park"
+  },
+  {
+    "id": "RosecransRecCenter",
+    "place_id": "ChIJUa9293zKwoAR38mEUT-hDiw",
+    "lat": 33.896389,
+    "lng": -118.2904586,
+    "address": "840 W 149th St, Gardena, CA 90247, USA",
+    "name": "Rosecrans Recreation Center"
+  },
+  {
+    "id": "SepulvedaRecCenter",
+    "place_id": "ChIJLSJ5FMaQwoARyf2ZwTEn3GM",
+    "lat": 34.23,
+    "lng": -118.45777779999999,
+    "address": "8825 Kester Ave, Panorama City, CA 91402, USA",
+    "name": "Sepulveda Recreation Center"
+  },
+  {
+    "id": "ShadowRanchRecCenter",
+    "place_id": "ChIJxQKvmTacwoARJ01LjELLd1E",
+    "lat": 34.1945663,
+    "lng": -118.6199798,
+    "address": "22633 Vanowen St, West Hills, CA 91307, USA",
+    "name": "Shadow Ranch Recreation Center"
+  },
+  {
+    "id": "Shane'sInspiration",
+    "place_id": "ChIJ7WrIKInAwoARe6ZeklLQqfA",
+    "lat": 34.135184699999996,
+    "lng": -118.2842313,
+    "address": "4800 Crystal Springs Dr, Los Angeles, CA 90027, USA",
+    "name": "Griffith park Playground 🛝"
+  },
+  {
+    "id": "SouthParkRecCenter",
+    "place_id": "ChIJUZtOqEPIwoAR2lGfM8zHvTE",
+    "lat": 33.9965623,
+    "lng": -118.26860590000001,
+    "address": "345 E 51st St, Los Angeles, CA 90011, USA",
+    "name": "South Park Recreation Center"
+  },
+  {
+    "id": "StonerRecCenter",
+    "place_id": "ChIJu0cPAW27woARHCJ70ge3j18",
+    "lat": 34.0384774,
+    "lng": -118.4534898,
+    "address": "1835 Stoner Ave, Los Angeles, CA 90025, USA",
+    "name": "Stoner Recreation Center"
+  },
+  {
+    "id": "StudioCityRecCenter",
+    "place_id": "ChIJXcieTRyWwoARMKOrb-d18Xs",
+    "lat": 34.151424899999995,
+    "lng": -118.4076908,
+    "address": "12621 Rye St, Studio City, CA 91604, USA",
+    "name": "Studio City Recreation Center"
+  },
+  {
+    "id": "SycamoreGrovePark",
+    "place_id": "ChIJr9T5oB_EwoARrvgeZxvPoVM",
+    "lat": 34.1000935,
+    "lng": -118.20331789999999,
+    "address": "4702 N Figueroa St, Los Angeles, CA 90042, USA",
+    "name": "Sycamore Grove Park"
+  },
+  {
+    "id": "TobiasAvenuePark",
+    "place_id": "ChIJx1iXrtyQwoARB-xfCojE-H0",
+    "lat": 34.2363864,
+    "lng": -118.45098859999999,
+    "address": "9122 Tobias Ave, Panorama City, CA 91402, USA",
+    "name": "Tobias Avenue Park"
+  },
+  {
+    "id": "ValleyGlenCommunityPark",
+    "place_id": "ChIJH20sK1yWwoARGuC_MyQjh7g",
+    "lat": 34.1824486,
+    "lng": -118.4192733,
+    "address": "6150 Atoll Ave, Van Nuys, CA 91436, USA",
+    "name": "Valley Glen Community Park"
+  },
+  {
+    "id": "VanNuysShermanOaksRecCenter",
+    "place_id": "ChIJjaY46rWXwoARMhb-0osOSD0",
+    "lat": 34.1600154,
+    "lng": -118.44202370000001,
+    "address": "14201 Huston St, Sherman Oaks, CA 91423, USA",
+    "name": "Van Nuys/Sherman Oaks Recreation Center"
+  },
+  {
+    "id": "VermontGagePark",
+    "place_id": "ChIJr6raBS_IwoARAc79mTIrYQU",
+    "lat": 33.9823501,
+    "lng": -118.291077,
+    "address": "963-999 W Gage Ave, Los Angeles, CA 90044, USA",
+    "name": "Vermont Gage Pocket Park"
+  },
+  {
+    "id": "WestchesterRecCenter",
+    "place_id": "ChIJt9QC6cGwwoARpC1LClsb0QA",
+    "lat": 33.9594131,
+    "lng": -118.4140147,
+    "address": "7000 W Manchester Ave, Los Angeles, CA 90045, USA",
+    "name": "Westchester Recreation Center"
+  },
+  {
+    "id": "WestsideNeighborhoodPark",
+    "place_id": "ChIJP2yCkJi5woAR0cmkulkmhEI",
+    "lat": 34.029506999999995,
+    "lng": -118.37019900000001,
+    "address": "3085 Clyde Ave, Los Angeles, CA 90016, USA",
+    "name": "Westside Neighborhood Park"
   }
 ]
