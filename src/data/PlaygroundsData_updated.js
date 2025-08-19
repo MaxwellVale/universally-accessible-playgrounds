@@ -321,16 +321,7 @@ module.exports = [
     "place_id": "ChIJaWpUjbyWwoARCfs6tQK6YfQ",
     "name": "Jaime Beth Slavin Park",
     "lat": 34.215323,
-    "lng": -118.4066346,
-    features : [
-      'Accessible ramp',
-      'Inclusive swing seats',
-      'Inclusive merry-go-round',
-      'Rubber floor play area',
-      'Sand play area',
-      'Large round swing',
-      'Standalone sensory play options'
-    ]
+    "lng": -118.4066346
   },
   {
     "id": "KenMalloyHarborPark",
@@ -338,13 +329,7 @@ module.exports = [
     "name": "Ken Malloy Harbor Regional Park",
     "lat": 33.783516,
     "lng": -118.29487599999999,
-    "address": "25820 Vermont Ave, Harbor City, CA 90710, USA",
-    features: [
-      'Accessible ramp',
-      'Rubber floor play area',
-      'Sand play area',
-      'Inclusive swing seats'
-    ]
+    "address": "25820 Vermont Ave, Harbor City, CA 90710, USA"
   },
   {
     "id": "AnthonyBeilensonPark",
@@ -352,13 +337,7 @@ module.exports = [
     "lat": 34.181399899999995,
     "lng": -118.49847079999999,
     "address": "6300 Balboa Blvd, Van Nuys, CA 91406, USA",
-    "name": "Lake Balboa/Anthony C. Beilenson Park",
-    features: [
-      "Accessible ramp",
-      "Rubber floor play area",
-      "Inclusive seat swings",
-      "Sand play area"
-    ]
+    "name": "Lake Balboa/Anthony C. Beilenson Park"
   },
   {
     "id": "LakeStreetPark",
@@ -370,120 +349,275 @@ module.exports = [
   },
   {
     "id": "LincolnPark",
-    "place_id": "",
-    "address": "",
-    "name": "Lincoln Park",
-    features: [
-        "Rubber floor play area",
-        "Sand play area",
-        "Accessible ramp",
-        "Inclusive swing seats"
-
-    ]
+    "place_id": "ChIJlVrAt9nFwoARsIhCc_AGd4c",
+    "lat": 34.066548,
+    "lng": -118.20076230000001,
+    "address": "3501 Valley Blvd, Los Angeles, CA 90031, USA",
+    "name": "Lincoln Park"
   },
   {
     "id": "MasonRecCenter",
-    "place_id": "",
-    "address": "",
+    "place_id": "ChIJg3kH3FebwoAReb1z-KRRx9I",
     "name": "Mason Recreation Center",
-    features: [
-        "Rubber floor play area",
-        "Inclusive swing seats",
-        "Inclusive see-saw seats"
-    ]
+    "features": [
+      "Rubber floor play area",
+      "Inclusive swing seats",
+      "Inclusive see-saw seats"
+    ],
+    "lat": 34.261248099999996,
+    "lng": -118.5794307,
+    "address": "10500 Mason Ave, Chatsworth, CA 91311, USA"
   },
   {
-    "id": "Ortho",
-    "place_id": "",
-    "address": "",
-    "name": "Orthopeadic Hospital Playground",
-    features: [
-        "Rubber floor play area",
-        "Sand play area",
-        "Accessible ramp",
-        "Inclusive swing seats"
-    ]
-  },
-{
     "id": "PanPacific",
-    "place_id": "",
-    "address": "",
-    "name": "Pan Pacific Park / Renee's Place",
-    features: [
-        "Rubber floor play area",
-        "Accessible ramp",
-        "Inclusive swing seats"
-    ]
+    "place_id": "ChIJMy_Fgi65woARlcdFNGLeztU",
+    "address": "7600 Beverly Blvd, Los Angeles, CA 90036, USA",
+    "name": "Pan Pacific Park",
+    "features": [
+      "Rubber floor play area",
+      "Accessible ramp",
+      "Inclusive swing seats"
+    ],
+    "lat": 34.073228199999996,
+    "lng": -118.35492939999999
   },
   {
     "id": "RioDeLA",
-    "place_id": "",
-    "address": "",
-    "name": "Rio De Los Angeles State Park (AKA Taylor's Yard)",
-    features: [
-        "Rubber floor play area",
-        "Sand play area",
-        "Accessible ramp",
-        "Inclusive swing seats",
-        "Water play area",
-        "Round swing"
-    ]
+    "place_id": "ChIJNb1XzsXGwoAR19eqqEGVjX8",
+    "address": "1900 N San Fernando Rd, Los Angeles, CA 90065, USA",
+    "name": "Rio de Los Angeles State Park State Recreation Area",
+    "features": [
+      "Rubber floor play area",
+      "Sand play area",
+      "Accessible ramp",
+      "Inclusive swing seats",
+      "Water play area",
+      "Round swing"
+    ],
+    "lat": 34.098711,
+    "lng": -118.2358502
   },
   {
     "id": "RitchieValens",
-    "place_id": "",
-    "address": "",
-    "name": "Ritchie Valens Park",
-    features: [
-        "Rubber floor play area",
-        "Sand play area",
-        "Accessible ramp",
-        "Inclusive swing seats",
-        "Standalone sensory play options",
-        "Round swing",
-        "Inclusive seat merry-go-round"
-    ]
+    "place_id": "ChIJ_f63vqqRwoARRODFbmNvtr8",
+    "address": "10736 Laurel Canyon Blvd, Pacoima, CA 91331, USA",
+    "name": "Ritchie Valens Recreation Center",
+    "features": [
+      "Rubber floor play area",
+      "Sand play area",
+      "Accessible ramp",
+      "Inclusive swing seats",
+      "Standalone sensory play options",
+      "Round swing",
+      "Inclusive seat merry-go-round"
+    ],
+    "lat": 34.2656304,
+    "lng": -118.43853550000001
   },
   {
     "id": "RosecransRecCenter",
-    "place_id": "",
-    "address": "",
-    "name": "Rosencrans Recreation Center / CVS Playground",
-    features: [
-        "Rubber floor play area",
-        "Sand play area",
-        "Accessible ramp",
-        "Inclusive swing seats",
-        "Standalone sensory play options",
+    "place_id": "ChIJUa9293zKwoAR38mEUT-hDiw",
+    "lat": 33.896389,
+    "lng": -118.2904586,
+    "address": "840 W 149th St, Gardena, CA 90247, USA",
+    "name": "Rosecrans Recreation Center",
+    "features": [
+      "Rubber floor play area",
+      "Sand play area",
+      "Accessible ramp",
+      "Inclusive swing seats",
+      "Standalone sensory play options"
     ]
   },
   {
     "id": "SepulvedaRecCenter",
-    "place_id": "",
-    "address": "",
+    "place_id": "ChIJLSJ5FMaQwoARyf2ZwTEn3GM",
+    "lat": 34.23,
+    "lng": -118.45777779999999,
+    "address": "8825 Kester Ave, Panorama City, CA 91402, USA",
     "name": "Sepulveda Recreation Center",
-    features: [
-        "Rubber floor play area",
-        "Sand play area",
-        "Accessible ramp",
-        "Inclusive swing seats",
-        "Large round swing",
-        "Inclusive seat merry-go-round",
-        "Standalone sensory play options",
-        "Inclusive seat zip-line"
+    "features": [
+      "Rubber floor play area",
+      "Sand play area",
+      "Accessible ramp",
+      "Inclusive swing seats",
+      "Large round swing",
+      "Inclusive seat merry-go-round",
+      "Standalone sensory play options",
+      "Inclusive seat zip-line"
     ]
   },
   {
     "id": "ShadowRanchRecCenter",
-    "place_id": "",
-    "address": "",
+    "place_id": "ChIJxQKvmTacwoARJ01LjELLd1E",
+    "lat": 34.1945663,
+    "lng": -118.6199798,
+    "address": "22633 Vanowen St, West Hills, CA 91307, USA",
     "name": "Shadow Ranch Recreation Center",
-    features: [
-        "Rubber floor play area",
-        "Sand play area",
-        "Accessible ramp",
-        "Inclusive swing seats"
-
+    "features": [
+      "Rubber floor play area",
+      "Sand play area",
+      "Accessible ramp",
+      "Inclusive swing seats"
     ]
   },
+  {
+    "id": "Shane'sInspiration",
+    "place_id": "ChIJ7WrIKInAwoARe6ZeklLQqfA",
+    "lat": 34.135184699999996,
+    "lng": -118.2842313,
+    "address": "4800 Crystal Springs Dr, Los Angeles, CA 90027, USA",
+    "name": "Griffith park Playground 🛝",
+    "features": [
+      "Inclusive seat merry-go-round",
+      "Inclusive seat see-saws",
+      "Standalone sensory play options",
+      "Accessible ramp",
+      "Rubber floor play area",
+      "Sand play area",
+      "Inclusive seat zip-line"
+    ]
+  },
+  {
+    "id": "SouthParkRecCenter",
+    "place_id": "ChIJUZtOqEPIwoAR2lGfM8zHvTE",
+    "lat": 33.9965623,
+    "lng": -118.26860590000001,
+    "address": "345 E 51st St, Los Angeles, CA 90011, USA",
+    "name": "South Park Recreation Center",
+    "features": [
+      "Sand play area",
+      "Rubber floor play area",
+      "Accessible ramp",
+      "Standalone sensory play options"
+    ]
+  },
+  {
+    "id": "StonerRecCenter",
+    "place_id": "ChIJu0cPAW27woARHCJ70ge3j18",
+    "lat": 34.0384774,
+    "lng": -118.4534898,
+    "address": "1835 Stoner Ave, Los Angeles, CA 90025, USA",
+    "name": "Stoner Recreation Center",
+    "features": [
+      "Rubber floor play area",
+      "Inclusive swing seats",
+      "Accessible ramp",
+      "Sand play area"
+    ]
+  },
+  {
+    "id": "StudioCityRecCenter",
+    "place_id": "ChIJXcieTRyWwoARMKOrb-d18Xs",
+    "lat": 34.151424899999995,
+    "lng": -118.4076908,
+    "address": "12621 Rye St, Studio City, CA 91604, USA",
+    "name": "Studio City Recreation Center",
+    "features": [
+      "Rubber floor play area",
+      "Inclusive seat merry-go-round",
+      "Inclusive swing seats"
+    ]
+  },
+  {
+    "id": "SycamoreGrovePark",
+    "place_id": "ChIJr9T5oB_EwoARrvgeZxvPoVM",
+    "lat": 34.1000935,
+    "lng": -118.20331789999999,
+    "address": "4702 N Figueroa St, Los Angeles, CA 90042, USA",
+    "name": "Sycamore Grove Park",
+    "features": [
+      "Rubber floor play area",
+      "Sand play area",
+      "Accessible ramp",
+      "Inclusive swing seats"
+    ]
+  },
+  {
+    "id": "TobiasAvenuePark",
+    "place_id": "ChIJx1iXrtyQwoARB-xfCojE-H0",
+    "lat": 34.2363864,
+    "lng": -118.45098859999999,
+    "address": "9122 Tobias Ave, Panorama City, CA 91402, USA",
+    "name": "Tobias Avenue Park",
+    "features": [
+      "Rubber floor play area",
+      "Accessible ramp"
+    ]
+  },
+  {
+    "id": "ValleyGlenCommunityPark",
+    "place_id": "ChIJH20sK1yWwoARGuC_MyQjh7g",
+    "lat": 34.1824486,
+    "lng": -118.4192733,
+    "address": "6150 Atoll Ave, Van Nuys, CA 91436, USA",
+    "name": "Valley Glen Community Park",
+    "features": [
+      "Rubber floor play area",
+      "Accessible ramp",
+      "Sand play area",
+      "Inclusive swing seats"
+    ]
+  },
+  {
+    "id": "VanNuysShermanOaksRecCenter",
+    "place_id": "ChIJjaY46rWXwoARMhb-0osOSD0",
+    "lat": 34.1600154,
+    "lng": -118.44202370000001,
+    "address": "14201 Huston St, Sherman Oaks, CA 91423, USA",
+    "name": "Van Nuys/Sherman Oaks Recreation Center",
+    "features": [
+      "Rubber floor play area",
+      "Sand play area",
+      "Standalone sensory play options",
+      "Accessible ramp",
+      "Wheelchair Accessible see-saw (SwayFun)"
+    ]
+  },
+  {
+    "id": "VermontGagePark",
+    "place_id": "ChIJr6raBS_IwoARAc79mTIrYQU",
+    "lat": 33.9823501,
+    "lng": -118.291077,
+    "address": "963-999 W Gage Ave, Los Angeles, CA 90044, USA",
+    "name": "Vermont Gage Pocket Park",
+    "features": [
+      "Rubber floor play area",
+      "Inclusive seat see-saws",
+      "Inclusive seat swings",
+      "Standalone sensory play options",
+      "Large round swing",
+      "Accessible ramp"
+    ]
+  },
+  {
+    "id": "WestchesterRecCenter",
+    "place_id": "ChIJt9QC6cGwwoARpC1LClsb0QA",
+    "lat": 33.9594131,
+    "lng": -118.4140147,
+    "address": "7000 W Manchester Ave, Los Angeles, CA 90045, USA",
+    "name": "Westchester Recreation Center",
+    "features": [
+      "Rubber floor play area",
+      "Sand play area",
+      "Accessible ramp",
+      "Standalone sensory play options"
+    ]
+  },
+  {
+    "id": "WestsideNeighborhoodPark",
+    "place_id": "ChIJP2yCkJi5woAR0cmkulkmhEI",
+    "lat": 34.029506999999995,
+    "lng": -118.37019900000001,
+    "address": "3085 Clyde Ave, Los Angeles, CA 90016, USA",
+    "name": "Westside Neighborhood Park",
+    "features": [
+      "Rubber floor play area",
+      "Standalone sensory play options",
+      "Accessible ramp",
+      "Inclusive Swing Seats",
+      "Sand play area",
+      "Wheelchair Accessible see-saw (SwayFun)"
+    ]
+  }
 ]

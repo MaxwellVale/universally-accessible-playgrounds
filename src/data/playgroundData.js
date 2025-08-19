@@ -249,28 +249,33 @@ const playgrounds = [
   },
   {
     "id": "MasonRecCenter",
-    "place_id": "",
+    "place_id": "ChIJg3kH3FebwoAReb1z-KRRx9I",
     "name": "Mason Recreation Center",
     features: [
         "Rubber floor play area",
         "Inclusive swing seats",
         "Inclusive see-saw seats"
-    ]
+    ],
+    "lat": 34.261248099999996,
+    "lng": -118.5794307,
+    "address": "10500 Mason Ave, Chatsworth, CA 91311, USA"
   },
 {
     "id": "PanPacific",
-    "place_id": "",
+    "place_id": "ChIJMy_Fgi65woARlcdFNGLeztU",
     "address": "",
     "name": "Pan Pacific Park / Renee's Place",
     features: [
         "Rubber floor play area",
         "Accessible ramp",
         "Inclusive swing seats"
-    ]
+    ],
+    "lat": 34.073228199999996,
+    "lng": -118.35492939999999
   },
   {
     "id": "RioDeLA",
-    "place_id": "",
+    "place_id": "ChIJNb1XzsXGwoAR19eqqEGVjX8",
     "address": "",
     "name": "Rio De Los Angeles State Park (AKA Taylor's Yard)",
     features: [
@@ -280,11 +285,13 @@ const playgrounds = [
         "Inclusive swing seats",
         "Water play area",
         "Round swing"
-    ]
+    ],
+    "lat": 34.098711,
+    "lng": -118.2358502
   },
   {
     "id": "RitchieValens",
-    "place_id": "",
+    "place_id": "ChIJ_f63vqqRwoARRODFbmNvtr8",
     "address": "",
     "name": "Ritchie Valens Park",
     features: [
@@ -295,7 +302,9 @@ const playgrounds = [
         "Standalone sensory play options",
         "Round swing",
         "Inclusive seat merry-go-round"
-    ]
+    ],
+    "lat": 34.2656304,
+    "lng": -118.43853550000001
   },
   {
     "id": "RosecransRecCenter",
