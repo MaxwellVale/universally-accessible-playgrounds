@@ -374,7 +374,16 @@ module.exports = [
     "place_id": "ChIJaWpUjbyWwoARCfs6tQK6YfQ",
     "name": "Jaime Beth Slavin Park",
     "lat": 34.215323,
-    "lng": -118.4066346
+    "lng": -118.4066346,
+    features : [
+      'Accessible ramp',
+      'Inclusive swing seats',
+      'Inclusive merry-go-round',
+      'Rubber floor play area',
+      'Sand play area',
+      'Large round swing',
+      'Standalone sensory play options'
+    ]
   },
   {
     "id": "KenMalloyHarborPark",
@@ -382,7 +391,13 @@ module.exports = [
     "name": "Ken Malloy Harbor Regional Park",
     "lat": 33.783516,
     "lng": -118.29487599999999,
-    "address": "25820 Vermont Ave, Harbor City, CA 90710, USA"
+    "address": "25820 Vermont Ave, Harbor City, CA 90710, USA",
+    features: [
+      'Accessible ramp',
+      'Rubber floor play area',
+      'Sand play area',
+      'Inclusive swing seats'
+    ]
   },
   {
     "id": "AnthonyBeilensonPark",
@@ -390,7 +405,13 @@ module.exports = [
     "lat": 34.181399899999995,
     "lng": -118.49847079999999,
     "address": "6300 Balboa Blvd, Van Nuys, CA 91406, USA",
-    "name": "Lake Balboa/Anthony C. Beilenson Park"
+    "name": "Lake Balboa/Anthony C. Beilenson Park",
+    features: [
+      "Accessible ramp",
+      "Rubber floor play area",
+      "Inclusive seat swings",
+      "Sand play area"
+    ]
   },
   {
     "id": "LakeStreetPark",
@@ -399,5 +420,122 @@ module.exports = [
     "lng": -118.2704805,
     "address": "227 N Lake St, Los Angeles, CA 90026, USA",
     "name": "Lake Street Community Center"
-  }
+  },
+  {
+    "id": "LincolnPark",
+    "place_id": "",
+    "address": "",
+    "name": "Lincoln Park",
+    features: [
+        "Rubber floor play area",
+        "Sand play area",
+        "Accessible ramp",
+        "Inclusive swing seats"
+
+    ]
+  },
+  {
+    "id": "MasonRecCenter",
+    "place_id": "",
+    "address": "",
+    "name": "Mason Recreation Center",
+    features: [
+        "Rubber floor play area",
+        "Inclusive swing seats",
+        "Inclusive see-saw seats"
+    ]
+  },
+  {
+    "id": "Ortho",
+    "place_id": "",
+    "address": "",
+    "name": "Orthopeadic Hospital Playground",
+    features: [
+        "Rubber floor play area",
+        "Sand play area",
+        "Accessible ramp",
+        "Inclusive swing seats"
+    ]
+  },
+{
+    "id": "PanPacific",
+    "place_id": "",
+    "address": "",
+    "name": "Pan Pacific Park / Renee's Place",
+    features: [
+        "Rubber floor play area",
+        "Accessible ramp",
+        "Inclusive swing seats"
+    ]
+  },{
+    "id": "RioDeLA",
+    "place_id": "",
+    "address": "",
+    "name": "Rio De Los Angeles State Park (AKA Taylor's Yard)",
+    features: [
+        "Rubber floor play area",
+        "Sand play area",
+        "Accessible ramp",
+        "Inclusive swing seats",
+        "Water play area",
+        "Round swing"
+    ]
+  },
+  {
+    "id": "RitchieValens",
+    "place_id": "",
+    "address": "",
+    "name": "Ritchie Valens Park",
+    features: [
+        "Rubber floor play area",
+        "Sand play area",
+        "Accessible ramp",
+        "Inclusive swing seats",
+        "Standalone sensory play options",
+        "Round swing",
+        "Inclusive seat merry-go-round"
+    ]
+  },
+  {
+    "id": "Rosencrans",
+    "place_id": "",
+    "address": "",
+    "name": "Rosencrans Recreation Center / CVS Playground",
+    features: [
+        "Rubber floor play area",
+        "Sand play area",
+        "Accessible ramp",
+        "Inclusive swing seats",
+        "Standalone sensory play options",
+    ]
+  },
+  {
+    "id": "Sepulveda",
+    "place_id": "",
+    "address": "",
+    "name": "Sepulveda Recreation Center",
+    features: [
+        "Rubber floor play area",
+        "Sand play area",
+        "Accessible ramp",
+        "Inclusive swing seats",
+        "Large round swing",
+        "Inclusive seat merry-go-round",
+        "Standalone sensory play options",
+        "Inclusive seat zip-line"
+    ]
+  },
+  {
+    "id": "ShadowRanch",
+    "place_id": "",
+    "address": "",
+    "name": "Shadow Ranch Recreation Center",
+    features: [
+        "Rubber floor play area",
+        "Sand play area",
+        "Accessible ramp",
+        "Inclusive swing seats"
+
+    ]
+  },
 ]
