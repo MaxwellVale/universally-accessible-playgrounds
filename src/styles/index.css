@@ -207,6 +207,11 @@ footer p {
   border-color: var(--dark-moss-green);
 }
 
+.features {
+  padding-left: 1rem;
+}
+
+
 .reviews {
   padding: 1rem;
   
