@@ -119,8 +119,8 @@ export default function PlaygroundDetails() {
   }
   const photos_api_url = photos_api && photos_api.length > 0 ? photos_api.map(photo => `https://places.googleapis.com/v1/${photo.name}/media?key=${GOOGLE_API_KEY}&${params}`) : []; // just get the URL from each photo object
   const photos = [...photos_local, ...photos_api_url]; // combine photos into one array 
-  console.log("Local photos: ", photos_local.length);
-  console.log("API photos: ", photos_api.length);
+  // console.log("Local photos: ", photos_local.length);
+  // console.log("API photos: ", photos_api.length);
   console.log("Combined photos array length: ", photos.length);
   return (
       <>
@@ -191,8 +191,8 @@ export default function PlaygroundDetails() {
           <>
             <h3 className='features'>Accessibility Features</h3>
             <ul className='feature-tags'>
-              {playground.features.map((f, idx) => (
-                <li key={idx} className='feature-tag'>{f}</li>
+              {playground.features.map((feature, idx) => (
+                <li key={idx} className='feature-tag'>{feature}</li>
               ))}
             </ul>
           </>
