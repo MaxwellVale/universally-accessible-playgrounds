@@ -1,7 +1,7 @@
 // PlaygroundDetails.jsx
 import { useState, useRef, useEffect } from 'react'
 import { useParams } from 'react-router-dom'
-import playgrounds from '../data/PlaygroundData.js'
+import playgrounds from '../data/playgroundData.js'
 import PlaygroundsMap from '../components/PlaygroundsMap.jsx'
 import Carousel from 'react-multi-carousel'
 import 'react-multi-carousel/lib/styles.css'
@@ -168,6 +168,14 @@ export default function PlaygroundDetails() {
           // ) : <p>No photos to show...</p>}
         ) : <p>No photos to show.</p>} 
         
+        <h3 className='features'>Features</h3>
+        <ul className='features-list'>
+            {playground.features.map((feature, index) => (
+            <li key={`$playground.id}-feature-${index}`}>{feature}
+            </li>
+            ))}
+          </ul>
+
         <h3 className='reviews'>Reviews</h3>
         {reviews?.length > 0 ? (
           <ul className='review-content'>
@@ -184,6 +192,7 @@ export default function PlaygroundDetails() {
         <div className='playgrounds-map'>
             <PlaygroundsMap playgrounds={ playgrounds } highlightID={ playgroundID } center={[location?.latitude, location?.longitude]} />
         </div>
+
       </>
   );
 }
