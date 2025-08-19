@@ -6,7 +6,6 @@ const playgrounds = [
     address: '5566 Via Marisol, Los Angeles, CA 90042',
     lat: 34.1001,
     lng: -118.1803,
-    description: 'An accessible playground in Hermon Park...',
     images: ['/src/assets/Hermon.jpg', ],
     reviews: [
         {author: 'Jane D.', content: 'Great accessible swings!', review: 5},
@@ -26,7 +25,6 @@ const playgrounds = [
     name: 'Griffith Park',
     lat: 34.1367,
     lng: -118.2942,
-    description: 'A large park with accessible features???...',
     images: ['/src/assets/Griffith1.jpg', ],
     reviews: [
         {author: 'Mark T.', content: 'Clear walkways. Plenty of shade and seating', review: 4},
@@ -44,7 +42,6 @@ const playgrounds = [
     address: '1350S> Sepulveda, Los Angeles, CA 90024',
     lat: 34.053129,
     lng: -118.448111, 
-    description: 'A large playground in West Los Angeles with several accessibility features.',
     images: ['/src/assets/AidansPlace1.jpg', ],
     reviews: [
         {author: 'Jane D.', content: 'Great accessible swings!', review: 5},
@@ -65,7 +62,6 @@ const playgrounds = [
     address: '7747 Foothill Boulevard, Sunland, CA 91402',
     lat: 34.257833,
     lng: -118.300917, 
-    description: 'A large playground in West Los Angeles with several accessibility features.',
     images: ['/src/assets/Howard1.jpg', ],
     reviews: [
         {author: 'Jane D.', content: 'Great accessible swings!', review: 5},
@@ -84,8 +80,7 @@ const playgrounds = [
     name: 'Hazard Recreation Center',
     address: '2230 Norfolk St., Los Angeles, CA 91402',
     lat: 34.060855,
-    lng: -118.202570, 
-    description: 'A large playground in West Los Angeles with several accessibility features.',
+    lng: -118.202570,
     images: [
         '/src/assets/HazardParkSign.jpg',
         '/src/assets/HazardPlaygroundClose.jpg',
@@ -107,8 +102,7 @@ const playgrounds = [
     name: 'Hansen Dam Recreation Area',
     address: '11770 Foothill Blvd., Lake View Terrace, CA 91342',
     lat: 34.270672,
-    lng: -118.390190, 
-    description: 'A playground near a dam??',
+    lng: -118.390190,
     images: ['/src/assets/HansenDam1.jpg', ],
     reviews: [
         {author: 'Jane D.', content: 'Great accessible swings!', review: 5},
@@ -129,7 +123,6 @@ const playgrounds = [
     address: '17141 Nordhoff St., Northridge, CA 91325',
     lat: 34.236556,
     lng: -118.507927, 
-    description: 'A playground near a dam??',
     images: ['/src/assets/HansenDam1.jpg', ],
     reviews: [
         {author: 'Jane D.', content: 'Great accessible swings!', review: 5},
@@ -150,7 +143,6 @@ const playgrounds = [
     address: '10145 Arminta St., Sun Valley, CA 91352',
     lat: 34.215039,
     lng: -118.353476, 
-    description: 'Do not know much.',
     images: ['/src/assets/HansenDam1.jpg', ],
     reviews: [
         {author: 'Jane D.', content: 'Great accessible swings!', review: 5},
@@ -170,7 +162,6 @@ const playgrounds = [
     address: '4601 Alla Rd., Los Angeles, CA 90292',
     lat: 33.984613,
     lng: -118.431051, 
-    description: 'A playground near a dam??',
     images: ['/src/assets/HansenDam1.jpg', ],
     reviews: [
         {author: 'Jane D.', content: 'Great accessible swings!', review: 5},
@@ -192,7 +183,6 @@ const playgrounds = [
     address: '2413 Second Ave, Los Angeles, CA 90018',
     lat: 34.034386,
     lng: -118.319397, 
-    description: 'A memorial park that hosts several after school and summer programas for kids.',
     images: ['/src/assets/HansenDam1.jpg', ],
     reviews: [
         {author: 'Jane D.', content: 'Great accessible swings!', review: 5},
@@ -211,8 +201,7 @@ const playgrounds = [
     name: 'Baldwin Hills Recreation Center',
     address: '5401 Highlight Pl., Los Angeles, CA 90016',
     lat: 34.023511,
-    lng: -118.364202, 
-    description: 'A playground near a dam??',
+    lng: -118.364202,
     images: ['/src/assets/HansenDam1.jpg', ],
     reviews: [
         {author: 'Jane D.', content: 'Great accessible swings!', review: 5},
@@ -579,7 +568,14 @@ const playgrounds = [
     "lat": 34.2291963,
     "lng": -118.40216579999998,
     "address": "8851 Laurel Canyon Blvd, Sun Valley, CA 91352, USA",
-    "name": "Fernangeles Recreation Center"
+    "name": "Fernangeles Recreation Center",
+    features: [
+      "Rubber floor play area",
+      "Inclusive swing seats",
+      "Standalone sensory play options",
+      "Accessible ramp",
+      "Sand play area"
+    ]
   }
   // add more...
 ];
