@@ -13,8 +13,11 @@ const playgrounds = [
         {author: 'Darwin, C.', content: 'Could use more accessible walkways...', review: 3}
     ],
     features: [
+        'Rubber floor play area',
         'Accessible ramp',
-        'Inclusive swings'
+        'Inclusive seat swings',
+        'Wheelchair accessible see-saw',
+        'Sand play area'
     ]
   },
   {
@@ -49,7 +52,10 @@ const playgrounds = [
     ],
     features: [
         'Accessible ramp',
-        'Inclusive swings'
+        'Inclusive swings',
+        'Rubber floor play area',
+        'Standalone sensory play options',
+        'Inclusive seat swings'
     ]
   },
   {
@@ -66,9 +72,10 @@ const playgrounds = [
         {author: 'Darwin, C.', content: 'Could use more accessible walkways...', review: 3}
     ],
     features: [
-        'Childrens Play Area',
-        'Picnic Tables',
-        'Volleyball Courts (Unlit)'
+        'Inclusive seat see-saws',
+        'Rubber floor play area',
+        'Sand play area',
+        'Standalone sensory play options',
     ]
   },
   {
@@ -89,9 +96,9 @@ const playgrounds = [
         {author: 'Darwin, C.', content: 'Could use more accessible walkways...', review: 3}
     ],
     features: [
-        'Childrens Play Area',
-        'Multipurpose Sports Field',
-        'Universally Accessible Playground (UAP)'
+        'Accessible ramp',
+        'Rubber floor play area',
+        'Standalone sensory play options'
     ]
   },
   {
@@ -108,7 +115,11 @@ const playgrounds = [
         {author: 'Darwin, C.', content: 'Could use more accessible walkways...', review: 3}
     ],
     features: [
-        'None listed'
+        'Rubber floor play area',
+        'Standalone sensory play options',
+        'Accessible ramp',
+        'Inclusive seat swings',
+        'Sand play area'
     ]
   },
   {
@@ -125,8 +136,11 @@ const playgrounds = [
         {author: 'Darwin, C.', content: 'Could use more accessible walkways...', review: 3}
     ],
     features: [
-        'Basketball Courts (Lighted / Outdoor)', 
-        'Childrens Play Area'
+        'Sand play area',
+        'Inclusive swing seats',
+        'Rubber floor play area',
+        'Accessible ramp',
+        'Standalone sensory play options'
     ]
   },
   {
@@ -143,7 +157,10 @@ const playgrounds = [
         {author: 'Darwin, C.', content: 'Could use more accessible walkways...', review: 3}
     ],
     features: [
-        'Picnic Tables'
+        'Accessible ramp',
+        'Rubber floor play area',
+        'Inclusive seat swings',
+        'Sand play area'
     ]
   },
   {
@@ -160,9 +177,12 @@ const playgrounds = [
         {author: 'Darwin, C.', content: 'Could use more accessible walkways...', review: 3}
     ],
     features: [
-        'Paddle Tennis', 
-        'Childrens Play Area',
-        'Off-Leash Dog Park'
+        'Sand play area',
+        'Rubber floor play area',
+        'Standalone sensory play options',
+        'Accessible ramp',
+        'Inclusive seat swings',
+        'Wheelchair accessible see-saw (SwayFun)'
     ]
   },
   {
@@ -179,8 +199,10 @@ const playgrounds = [
         {author: 'Darwin, C.', content: 'Could use more accessible walkways...', review: 3}
     ],
     features: [
-        'Basketball Courts (Lighted / Outdoor)', 
-        'Childrens Play Area'
+        'Sand play area',
+        'Standalone sensory play options',
+        'Accessible ramp',
+        'Rubber floor play area'
     ]
   },
   {
@@ -197,8 +219,8 @@ const playgrounds = [
         {author: 'Darwin, C.', content: 'Could use more accessible walkways...', review: 3}
     ],
     features: [
-        'Basketball Courts (Lighted / Outdoor)', 
-        'Childrens Play Area'
+        'Rubber floor play area',
+        'Accessible ramp'
     ]
   },
   {
@@ -207,6 +229,13 @@ const playgrounds = [
     name: 'Harvard Park',
     lat: 33.983511, 
     lng: -118.303790,
+    features: [
+      'Inclusive seat see-saws',
+      'Rubber floor play area',
+      'Inclusive merry-go-round',
+      'Inclusive seat swings',
+      'Wheelchair accessible see-saw (SwayFun)'
+    ]
   },
   {
     id: 'JaimeBethSlavinPark',
@@ -214,6 +243,15 @@ const playgrounds = [
     name: 'Jaime Beth Slavin Park',
     lat: 34.215323,
     lng: -118.4066346,
+    features: [
+      'Accessible ramp',
+      'Inclusive swing seats',
+      'Inclusive merry-go-round',
+      'Rubber floor play area',
+      'Sand play area',
+      'Large round swing',
+      'Standalone sensory play options'
+    ]
   },
   {
     "id": "KenMalloyHarborPark",
@@ -221,7 +259,13 @@ const playgrounds = [
     "name": "Ken Malloy Harbor Regional Park",
     "lat": 33.783516,
     "lng": -118.29487599999999,
-    "address": "25820 Vermont Ave, Harbor City, CA 90710, USA"
+    "address": "25820 Vermont Ave, Harbor City, CA 90710, USA",
+    features: [
+      'Accessible ramp',
+      'Rubber floor play area',
+      'Sand play area',
+      'Inclusive swing seats'
+    ]
   },
   {
     id: 'AnthonyBeilensonPark',
@@ -229,7 +273,13 @@ const playgrounds = [
     lat: 34.181399899999995,
     lng: -118.49847079999999,
     address: "6300 Balboa Blvd, Van Nuys, CA 91406, USA",
-    name: "Lake Balboa/Anthony C. Beilenson Park"
+    name: "Lake Balboa/Anthony C. Beilenson Park",
+    features: [
+      "Accessible ramp",
+      "Rubber floor play area",
+      "Inclusive seat swings",
+      "Sand play area"
+    ]
   },
   {
     id: 'LakeStreetPark',
@@ -237,7 +287,12 @@ const playgrounds = [
     lat: 34.0689383,
     lng: -118.2704805,
     address: "227 N Lake St, Los Angeles, CA 90026, USA",
-    name: "Lake Street Community Center"
+    name: "Lake Street Community Center",
+    features: [
+      "Inclusive swings",
+      'Rubber floor play area',
+      'Sand play area'
+    ]
   },
   {
     id: 'LincolnPark',
@@ -245,7 +300,13 @@ const playgrounds = [
     "lat": 34.066548,
     "lng": -118.20076230000001,
     "address": "3501 Valley Blvd, Los Angeles, CA 90031, USA",
-    "name": "Lincoln Park"
+    "name": "Lincoln Park",
+    features: [
+        "Rubber floor play area",
+        "Sand play area",
+        "Accessible ramp",
+        "Inclusive swing seats"
+    ]
   },
   {
     "id": "MasonRecCenter",
@@ -259,7 +320,7 @@ const playgrounds = [
   },
 {
     "id": "PanPacific",
-    "place_id": "",
+    "place_id": "ChIJN6GTkS65woARBJYrw3PpcuU",
     "address": "",
     "name": "Pan Pacific Park / Renee's Place",
     features: [
@@ -294,7 +355,7 @@ const playgrounds = [
         "Inclusive swing seats",
         "Standalone sensory play options",
         "Round swing",
-        "Inclusive seat merry-go-round"
+        "Inclusive merry-go-round"
     ]
   },
   {
@@ -325,7 +386,7 @@ const playgrounds = [
         "Accessible ramp",
         "Inclusive swing seats",
         "Large round swing",
-        "Inclusive seat merry-go-round",
+        "Inclusive merry-go-round",
         "Standalone sensory play options",
         "Inclusive seat zip-line"
     ]
@@ -352,7 +413,7 @@ const playgrounds = [
     "address": "4800 Crystal Springs Dr, Los Angeles, CA 90027, USA",
     "name": "Griffith park Playground 🛝",
     features: [
-      "Inclusive seat merry-go-round",
+      "Inclusive merry-go-round",
       "Inclusive seat see-saws",
       "Standalone sensory play options",
       "Accessible ramp",
@@ -398,7 +459,7 @@ const playgrounds = [
     "name": "Studio City Recreation Center",
     features: [
       "Rubber floor play area",
-      "Inclusive seat merry-go-round",
+      "Inclusive merry-go-round",
       "Inclusive swing seats"
     ]
   },
@@ -454,7 +515,7 @@ const playgrounds = [
       "Sand play area",
       "Standalone sensory play options",
       "Accessible ramp",
-      "Wheelchair Accessible see-saw (SwayFun)"
+      "Wheelchair accessible see-saw (SwayFun)"
     ]
   },
   {
@@ -467,7 +528,7 @@ const playgrounds = [
     features: [
       "Rubber floor play area",
       "Inclusive seat see-saws",
-      "Inclusive seat swings",
+      "Inclusive swing seats",
       "Standalone sensory play options",
       "Large round swing",
       "Accessible ramp"
@@ -498,9 +559,9 @@ const playgrounds = [
       "Rubber floor play area",
       "Standalone sensory play options",
       "Accessible ramp",
-      "Inclusive Swing Seats",
+      "Inclusive swing seats",
       "Sand play area",
-      "Wheelchair Accessible see-saw (SwayFun)"
+      "Wheelchair accessible see-saw (SwayFun)"
     ]
   }
   // add more...
