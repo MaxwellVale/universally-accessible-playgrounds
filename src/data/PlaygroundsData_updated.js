@@ -445,7 +445,7 @@ module.exports = [
     ]
   },
   {
-    "id": "Rosencrans",
+    "id": "RosecransRecCenter",
     "place_id": "",
     "address": "",
     "name": "Rosencrans Recreation Center / CVS Playground",
@@ -458,7 +458,7 @@ module.exports = [
     ]
   },
   {
-    "id": "Sepulveda",
+    "id": "SepulvedaRecCenter",
     "place_id": "",
     "address": "",
     "name": "Sepulveda Recreation Center",
@@ -474,7 +474,7 @@ module.exports = [
     ]
   },
   {
-    "id": "ShadowRanch",
+    "id": "ShadowRanchRecCenter",
     "place_id": "",
     "address": "",
     "name": "Shadow Ranch Recreation Center",

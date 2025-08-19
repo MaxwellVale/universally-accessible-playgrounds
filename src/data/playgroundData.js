@@ -277,7 +277,16 @@ const playgrounds = [
     "lat": 34.135184699999996,
     "lng": -118.2842313,
     "address": "4800 Crystal Springs Dr, Los Angeles, CA 90027, USA",
-    "name": "Griffith park Playground 🛝"
+    "name": "Griffith park Playground 🛝",
+    features: [
+      "Inclusive seat merry-go-round",
+      "Inclusive seat see-saws",
+      "Standalone sensory play options",
+      "Accessible ramp",
+      "Rubber floor play area",
+      "Sand play area",
+      "Inclusive seat zip-line"
+    ]
   },
   {
     "id": "SouthParkRecCenter",
@@ -285,7 +294,13 @@ const playgrounds = [
     "lat": 33.9965623,
     "lng": -118.26860590000001,
     "address": "345 E 51st St, Los Angeles, CA 90011, USA",
-    "name": "South Park Recreation Center"
+    "name": "South Park Recreation Center",
+    features: [
+      "Sand play area",
+      "Rubber floor play area",
+      "Accessible ramp",
+      "Standalone sensory play options"
+    ]
   },
   {
     "id": "StonerRecCenter",
@@ -293,7 +308,13 @@ const playgrounds = [
     "lat": 34.0384774,
     "lng": -118.4534898,
     "address": "1835 Stoner Ave, Los Angeles, CA 90025, USA",
-    "name": "Stoner Recreation Center"
+    "name": "Stoner Recreation Center",
+    features: [
+      "Rubber floor play area",
+      "Inclusive swing seats",
+      "Accessible ramp",
+      "Sand play area"
+    ]
   },
   {
     "id": "StudioCityRecCenter",
@@ -301,7 +322,12 @@ const playgrounds = [
     "lat": 34.151424899999995,
     "lng": -118.4076908,
     "address": "12621 Rye St, Studio City, CA 91604, USA",
-    "name": "Studio City Recreation Center"
+    "name": "Studio City Recreation Center",
+    features: [
+      "Rubber floor play area",
+      "Inclusive seat merry-go-round",
+      "Inclusive swing seats"
+    ]
   },
   {
     "id": "SycamoreGrovePark",
@@ -309,7 +335,13 @@ const playgrounds = [
     "lat": 34.1000935,
     "lng": -118.20331789999999,
     "address": "4702 N Figueroa St, Los Angeles, CA 90042, USA",
-    "name": "Sycamore Grove Park"
+    "name": "Sycamore Grove Park",
+    features: [
+      "Rubber floor play area",
+      "Sand play area",
+      "Accessible ramp",
+      "Inclusive swing seats"
+    ]
   },
   {
     "id": "TobiasAvenuePark",
@@ -317,7 +349,11 @@ const playgrounds = [
     "lat": 34.2363864,
     "lng": -118.45098859999999,
     "address": "9122 Tobias Ave, Panorama City, CA 91402, USA",
-    "name": "Tobias Avenue Park"
+    "name": "Tobias Avenue Park",
+    features: [
+      "Rubber floor play area",
+      "Accessible ramp"
+    ]
   },
   {
     "id": "ValleyGlenCommunityPark",
@@ -325,7 +361,13 @@ const playgrounds = [
     "lat": 34.1824486,
     "lng": -118.4192733,
     "address": "6150 Atoll Ave, Van Nuys, CA 91436, USA",
-    "name": "Valley Glen Community Park"
+    "name": "Valley Glen Community Park",
+    features: [
+      "Rubber floor play area",
+      "Accessible ramp",
+      "Sand play area",
+      "Inclusive swing seats"
+    ]
   },
   {
     "id": "VanNuysShermanOaksRecCenter",
@@ -333,7 +375,14 @@ const playgrounds = [
     "lat": 34.1600154,
     "lng": -118.44202370000001,
     "address": "14201 Huston St, Sherman Oaks, CA 91423, USA",
-    "name": "Van Nuys/Sherman Oaks Recreation Center"
+    "name": "Van Nuys/Sherman Oaks Recreation Center",
+    features: [ 
+      "Rubber floor play area",
+      "Sand play area",
+      "Standalone sensory play options",
+      "Accessible ramp",
+      "Wheelchair Accessible see-saw (SwayFun)"
+    ]
   },
   {
     "id": "VermontGagePark",
@@ -341,7 +390,15 @@ const playgrounds = [
     "lat": 33.9823501,
     "lng": -118.291077,
     "address": "963-999 W Gage Ave, Los Angeles, CA 90044, USA",
-    "name": "Vermont Gage Pocket Park"
+    "name": "Vermont Gage Pocket Park",
+    features: [
+      "Rubber floor play area",
+      "Inclusive seat see-saws",
+      "Inclusive seat swings",
+      "Standalone sensory play options",
+      "Large round swing",
+      "Accessible ramp"
+    ]
   },
   {
     "id": "WestchesterRecCenter",
@@ -349,7 +406,13 @@ const playgrounds = [
     "lat": 33.9594131,
     "lng": -118.4140147,
     "address": "7000 W Manchester Ave, Los Angeles, CA 90045, USA",
-    "name": "Westchester Recreation Center"
+    "name": "Westchester Recreation Center",
+    features: [
+      "Rubber floor play area",
+      "Sand play area",
+      "Accessible ramp",
+      "Standalone sensory play options"
+    ]
   },
   {
     "id": "WestsideNeighborhoodPark",
@@ -357,7 +420,15 @@ const playgrounds = [
     "lat": 34.029506999999995,
     "lng": -118.37019900000001,
     "address": "3085 Clyde Ave, Los Angeles, CA 90016, USA",
-    "name": "Westside Neighborhood Park"
+    "name": "Westside Neighborhood Park",
+    features: [
+      "Rubber floor play area",
+      "Standalone sensory play options",
+      "Accessible ramp",
+      "Inclusive Swing Seats",
+      "Sand play area",
+      "Wheelchair Accessible see-saw (SwayFun)"
+    ]
   }
   // add more...
 ];
