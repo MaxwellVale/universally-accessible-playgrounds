@@ -23,8 +23,11 @@ module.exports = [
       }
     ],
     "features": [
+      "Rubber floor play area",
       "Accessible ramp",
-      "Inclusive swings"
+      "Inclusive seat swings",
+      "Wheelchair accessible see-saw",
+      "Sand play area"
     ]
   },
   {
@@ -79,7 +82,10 @@ module.exports = [
     ],
     "features": [
       "Accessible ramp",
-      "Inclusive swings"
+      "Inclusive swings",
+      "Rubber floor play area",
+      "Standalone sensory play options",
+      "Inclusive seat swings"
     ]
   },
   {
@@ -106,9 +112,10 @@ module.exports = [
       }
     ],
     "features": [
-      "Childrens Play Area",
-      "Picnic Tables",
-      "Volleyball Courts (Unlit)"
+      "Inclusive seat see-saws",
+      "Rubber floor play area",
+      "Sand play area",
+      "Standalone sensory play options"
     ]
   },
   {
@@ -137,9 +144,9 @@ module.exports = [
       }
     ],
     "features": [
-      "Childrens Play Area",
-      "Multipurpose Sports Field",
-      "Universally Accessible Playground (UAP)"
+      "Accessible ramp",
+      "Rubber floor play area",
+      "Standalone sensory play options"
     ]
   },
   {
@@ -166,7 +173,11 @@ module.exports = [
       }
     ],
     "features": [
-      "None listed"
+      "Rubber floor play area",
+      "Standalone sensory play options",
+      "Accessible ramp",
+      "Inclusive seat swings",
+      "Sand play area"
     ]
   },
   {
@@ -193,8 +204,11 @@ module.exports = [
       }
     ],
     "features": [
-      "Basketball Courts (Lighted / Outdoor)",
-      "Childrens Play Area"
+      "Sand play area",
+      "Inclusive swing seats",
+      "Rubber floor play area",
+      "Accessible ramp",
+      "Standalone sensory play options"
     ]
   },
   {
@@ -221,7 +235,10 @@ module.exports = [
       }
     ],
     "features": [
-      "Picnic Tables"
+      "Accessible ramp",
+      "Rubber floor play area",
+      "Inclusive seat swings",
+      "Sand play area"
     ]
   },
   {
@@ -248,9 +265,12 @@ module.exports = [
       }
     ],
     "features": [
-      "Paddle Tennis",
-      "Childrens Play Area",
-      "Off-Leash Dog Park"
+      "Sand play area",
+      "Rubber floor play area",
+      "Standalone sensory play options",
+      "Accessible ramp",
+      "Inclusive seat swings",
+      "Wheelchair accessible see-saw (SwayFun)"
     ]
   },
   {
@@ -277,8 +297,10 @@ module.exports = [
       }
     ],
     "features": [
-      "Basketball Courts (Lighted / Outdoor)",
-      "Childrens Play Area"
+      "Sand play area",
+      "Standalone sensory play options",
+      "Accessible ramp",
+      "Rubber floor play area"
     ]
   },
   {
@@ -305,8 +327,8 @@ module.exports = [
       }
     ],
     "features": [
-      "Basketball Courts (Lighted / Outdoor)",
-      "Childrens Play Area"
+      "Rubber floor play area",
+      "Accessible ramp"
     ]
   },
   {
@@ -314,14 +336,30 @@ module.exports = [
     "place_id": "ChIJnZUvdtm3woARDE7LsazdD2Q",
     "name": "Harvard Park",
     "lat": 33.983511,
-    "lng": -118.30379
+    "lng": -118.30379,
+    "features": [
+      "Inclusive seat see-saws",
+      "Rubber floor play area",
+      "Inclusive merry-go-round",
+      "Inclusive seat swings",
+      "Wheelchair accessible see-saw (SwayFun)"
+    ]
   },
   {
     "id": "JaimeBethSlavinPark",
     "place_id": "ChIJaWpUjbyWwoARCfs6tQK6YfQ",
     "name": "Jaime Beth Slavin Park",
     "lat": 34.215323,
-    "lng": -118.4066346
+    "lng": -118.4066346,
+    "features": [
+      "Accessible ramp",
+      "Inclusive swing seats",
+      "Inclusive merry-go-round",
+      "Rubber floor play area",
+      "Sand play area",
+      "Large round swing",
+      "Standalone sensory play options"
+    ]
   },
   {
     "id": "KenMalloyHarborPark",
@@ -329,7 +367,13 @@ module.exports = [
     "name": "Ken Malloy Harbor Regional Park",
     "lat": 33.783516,
     "lng": -118.29487599999999,
-    "address": "25820 Vermont Ave, Harbor City, CA 90710, USA"
+    "address": "25820 Vermont Ave, Harbor City, CA 90710, USA",
+    "features": [
+      "Accessible ramp",
+      "Rubber floor play area",
+      "Sand play area",
+      "Inclusive swing seats"
+    ]
   },
   {
     "id": "AnthonyBeilensonPark",
@@ -337,7 +381,13 @@ module.exports = [
     "lat": 34.181399899999995,
     "lng": -118.49847079999999,
     "address": "6300 Balboa Blvd, Van Nuys, CA 91406, USA",
-    "name": "Lake Balboa/Anthony C. Beilenson Park"
+    "name": "Lake Balboa/Anthony C. Beilenson Park",
+    "features": [
+      "Accessible ramp",
+      "Rubber floor play area",
+      "Inclusive seat swings",
+      "Sand play area"
+    ]
   },
   {
     "id": "LakeStreetPark",
@@ -345,7 +395,12 @@ module.exports = [
     "lat": 34.0689383,
     "lng": -118.2704805,
     "address": "227 N Lake St, Los Angeles, CA 90026, USA",
-    "name": "Lake Street Community Center"
+    "name": "Lake Street Community Center",
+    "features": [
+      "Inclusive swings",
+      "Rubber floor play area",
+      "Sand play area"
+    ]
   },
   {
     "id": "LincolnPark",
@@ -353,7 +408,13 @@ module.exports = [
     "lat": 34.066548,
     "lng": -118.20076230000001,
     "address": "3501 Valley Blvd, Los Angeles, CA 90031, USA",
-    "name": "Lincoln Park"
+    "name": "Lincoln Park",
+    "features": [
+      "Rubber floor play area",
+      "Sand play area",
+      "Accessible ramp",
+      "Inclusive swing seats"
+    ]
   },
   {
     "id": "MasonRecCenter",
@@ -371,8 +432,8 @@ module.exports = [
   {
     "id": "PanPacific",
     "place_id": "",
-    "address": "7600 Beverly Blvd, Los Angeles, CA 90036, USA",
-    "name": "Pan Pacific Park",
+    "address": "",
+    "name": "Pan Pacific Park / Renee's Place",
     "features": [
       "Rubber floor play area",
       "Accessible ramp",
@@ -384,8 +445,8 @@ module.exports = [
   {
     "id": "RioDeLA",
     "place_id": "ChIJNb1XzsXGwoAR19eqqEGVjX8",
-    "address": "1900 N San Fernando Rd, Los Angeles, CA 90065, USA",
-    "name": "Rio de Los Angeles State Park State Recreation Area",
+    "address": "",
+    "name": "Rio De Los Angeles State Park (AKA Taylor's Yard)",
     "features": [
       "Rubber floor play area",
       "Sand play area",
@@ -442,7 +503,7 @@ module.exports = [
       "Accessible ramp",
       "Inclusive swing seats",
       "Large round swing",
-      "Inclusive seat merry-go-round",
+      "Inclusive merry-go-round",
       "Standalone sensory play options",
       "Inclusive seat zip-line"
     ]
@@ -469,7 +530,7 @@ module.exports = [
     "address": "4800 Crystal Springs Dr, Los Angeles, CA 90027, USA",
     "name": "Griffith park Playground 🛝",
     "features": [
-      "Inclusive seat merry-go-round",
+      "Inclusive merry-go-round",
       "Inclusive seat see-saws",
       "Standalone sensory play options",
       "Accessible ramp",
@@ -515,7 +576,7 @@ module.exports = [
     "name": "Studio City Recreation Center",
     "features": [
       "Rubber floor play area",
-      "Inclusive seat merry-go-round",
+      "Inclusive merry-go-round",
       "Inclusive swing seats"
     ]
   },
@@ -571,7 +632,7 @@ module.exports = [
       "Sand play area",
       "Standalone sensory play options",
       "Accessible ramp",
-      "Wheelchair Accessible see-saw (SwayFun)"
+      "Wheelchair accessible see-saw (SwayFun)"
     ]
   },
   {
@@ -584,7 +645,7 @@ module.exports = [
     "features": [
       "Rubber floor play area",
       "Inclusive seat see-saws",
-      "Inclusive seat swings",
+      "Inclusive swing seats",
       "Standalone sensory play options",
       "Large round swing",
       "Accessible ramp"
@@ -615,9 +676,9 @@ module.exports = [
       "Rubber floor play area",
       "Standalone sensory play options",
       "Accessible ramp",
-      "Inclusive Swing Seats",
+      "Inclusive swing seats",
       "Sand play area",
-      "Wheelchair Accessible see-saw (SwayFun)"
+      "Wheelchair accessible see-saw (SwayFun)"
     ]
   }
 ]

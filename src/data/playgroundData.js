@@ -268,7 +268,7 @@ const playgrounds = [
     ]
   },
   {
-    id: 'AnthonyBeilensonPark',
+    id: 'LakeBalboa',
     place_id: 'ChIJY2aJIduZwoAR0L-BBNrkvBs',
     lat: 34.181399899999995,
     lng: -118.49847079999999,
@@ -323,7 +323,7 @@ const playgrounds = [
   },
 {
     "id": "PanPacific",
-    "place_id": "",
+    "place_id": "ChIJMy_Fgi65woARlcdFNGLeztU",
     "address": "",
     "name": "Pan Pacific Park / Renee's Place",
     features: [
@@ -355,6 +355,8 @@ const playgrounds = [
     "place_id": "ChIJ_f63vqqRwoARRODFbmNvtr8",
     "address": "",
     "name": "Ritchie Valens Park",
+    "lat": 34.2656304,
+    "lng": -118.43853550000001,
     features: [
         "Rubber floor play area",
         "Sand play area",
@@ -511,7 +513,7 @@ const playgrounds = [
     ]
   },
   {
-    "id": "VanNuysShermanOaksRecCenter",
+    "id": "VanNuys",
     "place_id": "ChIJjaY46rWXwoARMhb-0osOSD0",
     "lat": 34.1600154,
     "lng": -118.44202370000001,
