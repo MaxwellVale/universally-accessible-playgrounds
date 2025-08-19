@@ -572,6 +572,14 @@ const playgrounds = [
       "Sand play area",
       "Wheelchair accessible see-saw (SwayFun)"
     ]
+  },
+  {
+    "id": "FernangelesPark",
+    "place_id": "ChIJmc1Gtq2WwoAR3wZUEbaKGlw",
+    "lat": 34.2291963,
+    "lng": -118.40216579999998,
+    "address": "8851 Laurel Canyon Blvd, Sun Valley, CA 91352, USA",
+    "name": "Fernangeles Recreation Center"
   }
   // add more...
 ];

@@ -376,7 +376,7 @@ module.exports = [
     ]
   },
   {
-    "id": "AnthonyBeilensonPark",
+    "id": "LakeBalboa",
     "place_id": "ChIJY2aJIduZwoAR0L-BBNrkvBs",
     "lat": 34.181399899999995,
     "lng": -118.49847079999999,
@@ -431,7 +431,7 @@ module.exports = [
   },
   {
     "id": "PanPacific",
-    "place_id": "",
+    "place_id": "ChIJMy_Fgi65woARlcdFNGLeztU",
     "address": "",
     "name": "Pan Pacific Park / Renee's Place",
     "features": [
@@ -461,8 +461,10 @@ module.exports = [
   {
     "id": "RitchieValens",
     "place_id": "ChIJ_f63vqqRwoARRODFbmNvtr8",
-    "address": "10736 Laurel Canyon Blvd, Pacoima, CA 91331, USA",
-    "name": "Ritchie Valens Recreation Center",
+    "address": "",
+    "name": "Ritchie Valens Park",
+    "lat": 34.2656304,
+    "lng": -118.43853550000001,
     "features": [
       "Rubber floor play area",
       "Sand play area",
@@ -471,9 +473,7 @@ module.exports = [
       "Standalone sensory play options",
       "Round swing",
       "Inclusive seat merry-go-round"
-    ],
-    "lat": 34.2656304,
-    "lng": -118.43853550000001
+    ]
   },
   {
     "id": "RosecransRecCenter",
@@ -621,7 +621,7 @@ module.exports = [
     ]
   },
   {
-    "id": "VanNuysShermanOaksRecCenter",
+    "id": "VanNuys",
     "place_id": "ChIJjaY46rWXwoARMhb-0osOSD0",
     "lat": 34.1600154,
     "lng": -118.44202370000001,
@@ -680,5 +680,13 @@ module.exports = [
       "Sand play area",
       "Wheelchair accessible see-saw (SwayFun)"
     ]
+  },
+  {
+    "id": "FernangelesPark",
+    "place_id": "ChIJmc1Gtq2WwoAR3wZUEbaKGlw",
+    "lat": 34.2291963,
+    "lng": -118.40216579999998,
+    "address": "8851 Laurel Canyon Blvd, Sun Valley, CA 91352, USA",
+    "name": "Fernangeles Recreation Center"
   }
 ]
