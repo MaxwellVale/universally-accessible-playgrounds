@@ -248,12 +248,69 @@ const playgrounds = [
     "name": "Lincoln Park"
   },
   {
+    "id": "MasonRecCenter",
+    "place_id": "",
+    "name": "Mason Recreation Center",
+    features: [
+        "Rubber floor play area",
+        "Inclusive swing seats",
+        "Inclusive see-saw seats"
+    ]
+  },
+{
+    "id": "PanPacific",
+    "place_id": "",
+    "address": "",
+    "name": "Pan Pacific Park / Renee's Place",
+    features: [
+        "Rubber floor play area",
+        "Accessible ramp",
+        "Inclusive swing seats"
+    ]
+  },
+  {
+    "id": "RioDeLA",
+    "place_id": "",
+    "address": "",
+    "name": "Rio De Los Angeles State Park (AKA Taylor's Yard)",
+    features: [
+        "Rubber floor play area",
+        "Sand play area",
+        "Accessible ramp",
+        "Inclusive swing seats",
+        "Water play area",
+        "Round swing"
+    ]
+  },
+  {
+    "id": "RitchieValens",
+    "place_id": "",
+    "address": "",
+    "name": "Ritchie Valens Park",
+    features: [
+        "Rubber floor play area",
+        "Sand play area",
+        "Accessible ramp",
+        "Inclusive swing seats",
+        "Standalone sensory play options",
+        "Round swing",
+        "Inclusive seat merry-go-round"
+    ]
+  },
+  {
     "id": "RosecransRecCenter",
     "place_id": "ChIJUa9293zKwoAR38mEUT-hDiw",
     "lat": 33.896389,
     "lng": -118.2904586,
     "address": "840 W 149th St, Gardena, CA 90247, USA",
-    "name": "Rosecrans Recreation Center"
+    "name": "Rosecrans Recreation Center",
+      features: [
+        "Rubber floor play area",
+        "Sand play area",
+        "Accessible ramp",
+        "Inclusive swing seats",
+        "Standalone sensory play options",
+    ]
   },
   {
     "id": "SepulvedaRecCenter",
@@ -261,7 +318,17 @@ const playgrounds = [
     "lat": 34.23,
     "lng": -118.45777779999999,
     "address": "8825 Kester Ave, Panorama City, CA 91402, USA",
-    "name": "Sepulveda Recreation Center"
+    "name": "Sepulveda Recreation Center",
+    features: [
+        "Rubber floor play area",
+        "Sand play area",
+        "Accessible ramp",
+        "Inclusive swing seats",
+        "Large round swing",
+        "Inclusive seat merry-go-round",
+        "Standalone sensory play options",
+        "Inclusive seat zip-line"
+    ]
   },
   {
     "id": "ShadowRanchRecCenter",
@@ -269,7 +336,13 @@ const playgrounds = [
     "lat": 34.1945663,
     "lng": -118.6199798,
     "address": "22633 Vanowen St, West Hills, CA 91307, USA",
-    "name": "Shadow Ranch Recreation Center"
+    "name": "Shadow Ranch Recreation Center",
+    features: [
+        "Rubber floor play area",
+        "Sand play area",
+        "Accessible ramp",
+        "Inclusive swing seats"
+    ]
   },
   {
     "id": "Shane'sInspiration",
