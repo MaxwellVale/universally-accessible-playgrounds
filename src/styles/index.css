@@ -120,8 +120,12 @@ footer p {
   padding: 1rem;
   border-style: solid;
   border-width: 1px;
+}
+
+.sidebar-content li {
   list-style-type: none;
 }
+
 .sidebar-content a {
   color: #1a1a1a;
   text-decoration: inherit;
@@ -159,7 +163,7 @@ footer p {
   width: 100%;
   max-width: 1000px;
   padding-bottom: 1rem;
-  
+  /* flex-direction: column; */
 }
 
 .carousel-slide {
@@ -178,33 +182,42 @@ footer p {
   display: block;
 }
 
-.thumbnails {
+.thumbnails-wrapper {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   gap: 0.5rem;
+  margin-top: 8px;
 }
 
-.thumbnails button {
+.thumbs-carousel {
+  min-height: 50px;
+}
+
+.thumbnails-wrapper button {
   border: none;
   background: none; 
   padding: 0;
   cursor: pointer;
 }
 
-.thumbnails img {
+.thumbnails-wrapper img {
   width: 80px;
   height: 45px;
   object-fit: cover;
   border: 4px solid transparent;
 }
 
-.thumbnails button:focus {
+.thumbnails-wrapper button:focus {
   outline: none; /* gets rid of the focus outline on buttons after clicking*/
   /* Could be an accessibility issue for keyboard users.  */
 }
 
-.thumbnails button.active img {
+.thumbnails-wrapper button.active img {
   border-color: var(--dark-moss-green);
+}
+
+.features {
+  padding: 1rem;
 }
 
 .reviews {

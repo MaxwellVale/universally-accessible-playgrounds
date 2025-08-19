@@ -29,7 +29,23 @@ const responsive = {
   }
 };
 
-
+const thumb_responsive = {
+  desktop: {
+    breakpoint: { max: 3000, min: 1024 },
+    items: 6,
+    slidesToSlide: 1 // optional, default to 1.
+  },
+  tablet: {
+    breakpoint: { max: 1024, min: 464 },
+    items: 5,
+    slidesToSlide: 1 // optional, default to 1.
+  },
+  mobile: {
+    breakpoint: { max: 464, min: 0 },
+    items: 4,
+    slidesToSlide: 1 // optional, default to 1.
+  }
+};
 
 export default function PlaygroundDetails() {
   const { playgroundID } = useParams()
@@ -146,15 +162,17 @@ export default function PlaygroundDetails() {
                 </Carousel>
 
                 {/* See if this stuff works */}
-                <div className="thumbnails">
+                <div className="thumbnails-wrapper">
                   <Carousel
                     ref={thumbnailRef}
-                    responsive={responsive}
+                    responsive={thumb_responsive}
+                    containerClass='thumbs-carousel'
+                    keyBoardControl
                   >
                   {photos.map((photo, idx) => (
                     <button key={idx} onClick={() => goToSlide(idx)} className={idx === currentSlide ? "active" : "inactive"}>
                       <img 
-                        src={`https://places.googleapis.com/v1/${photo.name}/media?key=${GOOGLE_API_KEY}&${params}`} 
+                        src={photo} 
                         alt={`Thumbnail ${idx + 1}`}
                         // onError={(e) => {
                         //     e.target.style.display = 'none';
@@ -167,6 +185,18 @@ export default function PlaygroundDetails() {
             </div>
           // ) : <p>No photos to show...</p>}
         ) : <p>No photos to show.</p>} 
+
+        {/* Conditional rendering depending on presence of features array in PlaygroundsData.js */}
+        {playground.features && playground.features.length > 0 && (
+          <>
+            <h3 className='features'>Accessibility Features</h3>
+            <ul className='feature-tags'>
+              {playground.features.map((f, idx) => (
+                <li key={idx} className='feature-tag'>{f}</li>
+              ))}
+            </ul>
+          </>
+        )}
         
         <h3 className='reviews'>Reviews</h3>
         {reviews?.length > 0 ? (
